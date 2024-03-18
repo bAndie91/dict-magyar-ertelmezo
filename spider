@@ -1,0 +1,29 @@
+#!/bin/bash
+
+set -euo pipefail
+
+. /usr/lib/tool/bash-utils
+
+szo=$1
+szo_urlenc=`echo -n "$szo" | url_encode`
+
+while true
+do
+	url="https://ertelmezo.oszk.hu/szotar.php?szo=$szo_urlenc"
+	
+	warnx "get $url"
+	page=`curl -sSf "$url"`
+	
+	echo "$szo"
+	echo "$page" |\
+		parsel ".col-md-10 .szocikk" |\
+		lines 2 | sed -e 's/\\\\/\\/g; s/\\r/\r/g; s/\\n/\n/g' | w3m-render |\
+		sed -e 's/^/\t/'
+	
+	next=`echo "$page" |\
+		parsel @.col-md-10 / @.pagination / @"li:nth-child(2)" / @a attr{href} |\
+		lines 2`
+	[[ $next =~ szo=([^&]+) ]]
+	szo_urlenc=${BASH_REMATCH[1]}
+	szo=`echo -n "$szo_urlenc" | sd '\+' ' ' | url_decode`
+done
