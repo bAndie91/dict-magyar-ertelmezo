@@ -1,0 +1,8 @@
+#!/bin/bash
+    
+for betu in A    Á    B    C    Cs    D    Dz    Dzs    E    É    F    G    Gy    H    I    Í    J    K    L    Ly    M    N    Ny    O    Ó    Ö    Ő    P    Q    R    S    Sz    T    Ty    U    Ú    Ü    Ű    V    W    X    Y    Z    Zs
+do
+	echo -n "$betu"$'\t'
+	curl -sSf "https://ertelmezo.oszk.hu/szotar.php?kezdobetu=$betu" |\
+	parsel @.col-md-2 / @a ::text | lines 4
+done

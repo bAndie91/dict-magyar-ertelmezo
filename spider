@@ -4,12 +4,13 @@ set -euo pipefail
 
 . /usr/lib/tool/bash-utils
 
-szo=$1
+kezdobetu=$1
+szo=$2
 szo_urlenc=`echo -n "$szo" | url_encode`
 
 while true
 do
-	url="https://ertelmezo.oszk.hu/szotar.php?szo=$szo_urlenc"
+	url="https://ertelmezo.oszk.hu/szotar.php?szo=$szo_urlenc&kezdobetu=$kezdobetu"
 	
 	warnx "get $url"
 	page=`curl -sSf "$url"`
