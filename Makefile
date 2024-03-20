@@ -23,5 +23,9 @@ install: $(PREFIX)/$(BASENAME).dict.dz $(PREFIX)/$(BASENAME).index
 	dictdconfig -w
 .PHONY: install
 
+restart-service:
+	service dictd restart
+.PHONY: restart-service
+
 $(PREFIX)/$(BASENAME).dict.dz $(PREFIX)/$(BASENAME).index: $(PREFIX)/%: %
 	install --compare -m 0644 $< $@

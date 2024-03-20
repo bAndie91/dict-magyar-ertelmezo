@@ -18,7 +18,8 @@ do
 	echo "$szo"
 	echo "$page" |\
 		parsel ".col-md-10 .szocikk" |\
-		lines 2 | sed -e 's/\\\\/\\/g; s/\\r/\r/g; s/\\n/\n/g' | w3m-render |\
+		lines 2 | sed -e 's/\\\\/\\/g; s/\\r/\r/g; s/\\n/\n/g' |\
+		w3m -graph -X -dump -cols 100000 -T text/html -F -r -O UTF-8 |\
 		sed -e 's/^/\t/'
 	
 	next=`echo "$page" |\
