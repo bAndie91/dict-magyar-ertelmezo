@@ -8,6 +8,8 @@ kezdobetu=$1
 szo=$2
 szo_urlenc=`echo -n "$szo" | url_encode`
 
+mkdir -p szavak/$kezdobetu/
+
 while true
 do
 	url="https://ertelmezo.oszk.hu/szotar.php?szo=$szo_urlenc&kezdobetu=$kezdobetu"
@@ -15,16 +17,24 @@ do
 	warnx "get $url"
 	page=`curl -sSf "$url"`
 	
+	# note, this script uses a modified version of w3m (branched from 0.5.3+git20230121-2 version)
+	# which allows 32k long lines in redered html page.
+	# this is needed to prevent line wrap even on lines longer than 1024.
+	
 	echo "$szo"
 	echo "$page" |\
 		parsel ".col-md-10 .szocikk" |\
 		lines 2 | sed -e 's/\\\\/\\/g; s/\\r/\r/g; s/\\n/\n/g' |\
-		w3m -graph -X -dump -cols 100000 -T text/html -F -r -O UTF-8 |\
+		tee szavak/$kezdobetu/"$szo".html |\
+		~/src/w3m/w3m/w3m -graph -X -dump -cols 100000 -T text/html -F -r -O UTF-8 |\
 		sed -e 's/^/\t/'
 	
 	next=`echo "$page" |\
 		parsel @.col-md-10 / @.pagination / @"li:nth-child(2)" / @a attr{href} |\
 		lines 2`
+	
+	if [ "$next" = "#" ]; then exit 0; fi
+	
 	[[ $next =~ szo=([^&]+) ]]
 	szo_urlenc=${BASH_REMATCH[1]}
 	szo=`echo -n "$szo_urlenc" | sd '\+' ' ' | url_decode`
