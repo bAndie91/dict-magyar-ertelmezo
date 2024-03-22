@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -euo pipefail
+
+# note, this script uses a modified version of w3m (branched from 0.5.3+git20230121-2 version)
+# which allows 32k long lines in redered html page.
+# this is needed to prevent line wrap even on lines longer than 1024.
+
+find szavak/ -name '*.html' -printf '%p\t%f\n' |\
+while IFS=$'\t' read -r path szo
+do
+	szo=${szo%.*}
+	echo "$szo"
+	
+	./transform-article "$path" | sed -e 's/^/\t/'
+done

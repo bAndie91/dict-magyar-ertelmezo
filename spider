@@ -16,18 +16,12 @@ do
 	
 	warnx "get $url"
 	page=`curl -sSf "$url"`
-	
-	# note, this script uses a modified version of w3m (branched from 0.5.3+git20230121-2 version)
-	# which allows 32k long lines in redered html page.
-	# this is needed to prevent line wrap even on lines longer than 1024.
-	
+		
 	echo "$szo"
 	echo "$page" |\
 		parsel ".col-md-10 .szocikk" |\
 		lines 2 | sed -e 's/\\\\/\\/g; s/\\r/\r/g; s/\\n/\n/g' |\
-		tee szavak/$kezdobetu/"$szo".html |\
-		~/src/w3m/w3m/w3m -graph -X -dump -cols 100000 -T text/html -F -r -O UTF-8 |\
-		sed -e 's/^/\t/'
+		tee szavak/$kezdobetu/"$szo".html >/dev/null
 	
 	next=`echo "$page" |\
 		parsel @.col-md-10 / @.pagination / @"li:nth-child(2)" / @a attr{href} |\

@@ -1,0 +1,19 @@
+#!/bin/bash
+
+set -euo pipefail
+
+comment()
+{
+	cat
+}
+
+path=$1
+
+cat "$path" |\
+comment kötőjelek |\
+sed -e 's//–/g' |\
+comment nem kellő karakterek |\
+sed -e 's/  //g' |\
+comment kék szövegrészek |\
+perl -pe 's[<span style="color:blue">(.+?)</span>][«$1»]g' |\
+~/src/w3m/w3m/w3m -graph -X -dump -cols 100000 -T text/html -F -r -O UTF-8
