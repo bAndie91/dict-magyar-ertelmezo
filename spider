@@ -36,6 +36,14 @@ do
 	if [ "$next" = "#" ]; then exit 0; fi
 	
 	[[ $next =~ szo=([^&]+) ]]
-	szo_urlenc=${BASH_REMATCH[1]}
-	szo=`echo -n "$szo_urlenc" | sd '\+' ' ' | url_decode`
+	next_szo_urlenc=${BASH_REMATCH[1]}
+	next_szo=`echo -n "$next_szo_urlenc" | sd '\+' ' ' | url_decode`
+	
+	if [ "$szo" = "$next_szo" ]
+	then
+		errx 2 "'$szo' után ugyanaz a szó jön"
+	fi
+	
+	szo_urlenc=$next_szo_urlenc
+	szo=$next_szo
 done
