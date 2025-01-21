@@ -1,0 +1,44 @@
+A	A [1]
+Á	Á [1]
+B	B [1]
+C	C [1]
+Cs	CS
+D	D [1]
+Dz	DZ
+Dzs	DZS
+E	E [1]
+É	É
+F	F [1]
+G	G [1]
+Gy	GY
+H	H [1]
+I	I
+Í	Í
+J	J
+K	K
+L	L
+Ly	LY
+M	M
+N	N
+Ny	NY
+O	O
+Ó	Ó [1]
+Ö	Ö
+Ő	Ő [1]
+P	P
+Q	Q
+R	R
+S	S [1]
+Sz	SZ [1]
+T	T
+Ty	TY
+U	U [1]
+Ú	Ú [1]
+Ü	Ü [1]
+Ű	Ű [1]
+V	V
+W	W
+X	X
+Y	Y
+Z	Z
+Zs	ZS
