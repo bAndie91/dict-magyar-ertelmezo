@@ -3,3 +3,4 @@
 set -euo pipefail
 
 ffilt ertelmezo.txt perl -p -- exponentize.pl
+ffilt ertelmezo.txt perl -pe 's{»(\s*)«}{$1}g'
