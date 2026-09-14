@@ -8,12 +8,11 @@ comment()
 }
 
 path=$1
+word=`basename "$path" .html`
 
 cat "$path" |\
-comment kötőjelek |\
-sed -e 's//–/g' |\
-comment nem kellő karakterek |\
-sed -e 's/  //g' |\
+perl fix-content.pl "$word" |\
+perl fix-encoding.pl "$word" |\
 perl bluetext.pl |\
 perl superscriptize.pl |\
 perl subscriptize.pl |\
