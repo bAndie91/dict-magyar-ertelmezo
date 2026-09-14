@@ -2,4 +2,4 @@
 
 set -euo pipefail
 
-ffilt ertelmezo.txt perl -p -- exponent-number.pl
+ffilt ertelmezo.txt perl -p -- exponentize.pl
