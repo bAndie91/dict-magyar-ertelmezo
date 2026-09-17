@@ -3,18 +3,31 @@
 use Encode qw/encode decode encode_utf8 decode_utf8/;
 use open ':std', ':utf8';
 
+$word = lc(decode_utf8 $ARGV[0]) =~ s/\s.*//r;
+
 $/ = undef;
 $_ = <STDIN>;
 
 s{ϖ}{ῶ}g;
 s{š}{≠}g;
-s{ŕ}{à}g; s{Ŕ}{À}g;
 s{ˇ}{⋅}g;
 s{}{—}g;
 s{ą}{±}g;
+s{ŕ}{à}g; s{Ŕ}{À}g;
+s{ĺ}{ȧ}g;
 s{â}{ȧ}g;
 s{ă}{ā}g;
+s{ě}{ē}g;
 s{Č}{⏑}g;
+s{Ě}{⊂}g if $word eq 'ujjafa';
+s{Ľ}{∞}g;
+s{ł}{; }g if $word ~~ [qw/szegfű szembefordít/];
+s{ň}{}g if $word eq 'íróeszköz';
+s{û}{ű}g if $word eq 'miszticizmus';
+s{õ}{ő}g if $word eq 'miszticizmus';
+s{(a figyelmet vmire felhívó ilyen jel: )→}{$1➳} if $word eq 'nyíl';
+s{\x{AD}}{↑}g if $word eq 'nyíl';
+s{Vörös\x{AD} marty}{Vörösmarty}g if $word eq 'sok';
 
 s{([\x{80}-\x{9F}])}{ decode('CP1252', encode('latin1', $1)) }eg;
 
