@@ -1,16 +1,25 @@
 #!/usr/bin/env perl
 
 use open ':std', ':utf8';
+use Encode qw/encode decode encode_utf8 decode_utf8/;
 
 $/ = undef;
 $_ = <STDIN>;
 
-$word = lc $ARGV[0];
+$word = lc decode_utf8 $ARGV[0];
 
 if($word eq 'timsó')
 {
 	s/\QKAl(SO4)2\E/KAl(SO₄)₂/g;
 	s/\Q12H2O\E/12 H₂O/g;
+}
+elsif($word eq 'szoroz')
+{
+	s/\Qx -et x [2]-tel szoroz\E/x-et x²-tel szoroz/g;
+}
+elsif($word eq 'minek')
+{
+	s/\Qragos évm Ld. m [2]\E/ragos névm Ld. mi [2]/g;
 }
 elsif($word eq 'jaj')
 {

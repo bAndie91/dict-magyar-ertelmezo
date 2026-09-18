@@ -1,9 +1,9 @@
 #!/usr/bin/env perl
 
-use Encode qw/encode decode encode_utf8 decode_utf8/;
 use open ':std', ':utf8';
+use Encode qw/encode decode encode_utf8 decode_utf8/;
 
-$word = lc(decode_utf8 $ARGV[0]) =~ s/\s.*//r;
+$word = lc decode_utf8 $ARGV[0];
 
 $/ = undef;
 $_ = <STDIN>;

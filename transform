@@ -2,10 +2,15 @@
 
 set -euo pipefail
 
+# {{{ special cases
+[ ! -e './szavak/O/OLY ]2].html' ] || mv -f './szavak/O/OLY ]2].html' './szavak/O/OLY [2].html'
+# }}}
+
 find szavak/ -name '*.html' -printf '%p\t%f\n' |\
 while IFS=$'\t' read -r path szo
 do
 	szo=${szo%.*}
+	szo=${szo% \[*}
 	echo "$szo"
 	
 	./transform-article "$path" | sed -e 's/^/\t/'
