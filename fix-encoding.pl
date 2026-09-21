@@ -21,7 +21,7 @@ s{ě}{ē}g;
 s{Č}{⏑}g;
 s{Ě}{⊂}g if $word eq 'ujjafa';
 s{Ľ}{∞}g;
-s{ł}{; }g if $word ~~ [qw/szegfű szembefordít/];
+s{ł}{; }g if $word =~ /^(szegfű|szembefordít)$/;
 s{ň}{}g if $word eq 'íróeszköz';
 s{û}{ű}g if $word eq 'miszticizmus';
 s{õ}{ő}g if $word eq 'miszticizmus';

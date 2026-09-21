@@ -2,16 +2,81 @@
 
 set -euo pipefail
 
+progress()
+{
+	local name=$1
+	shift
+	local varname=PROGRESS_$name
+	declare -g -A "$varname"
+	local total
+	local cur
+	
+	while [ $# -gt 0 ]
+	do
+		case "$1" in
+		(total)
+			shift
+			eval "$varname[total]=\$1"
+			;;
+		(change)
+			shift
+			if [[ $1 =~ ^[+-]([0-9]+)$ ]]
+			then
+				eval "true \${$varname[cur]:=0}"
+				eval "cur=\$[ \${$varname[cur]} $1 ]"
+			else
+				cur=$change
+			fi
+			eval "$varname[cur]=\$cur"
+			;;
+		(show)
+			eval "total=\${$varname[total]}"
+			eval "cur=\${$varname[cur]}"
+			printf "\r\x1B[K%s: %s%% %d/%d" "$name" `awk '{printf "%6.2f", $1*100/$2}' <<< "$cur $total"` $cur $total >&2
+			;;
+		esac
+		shift
+	done
+}
+
+
 # {{{ special cases
-[ ! -e './szavak/O/OLY ]2].html' ] || mv -f './szavak/O/OLY ]2].html' './szavak/O/OLY [2].html'
+if [ -e './szavak/O/OLY ]2].html' ]
+then
+	mv -f './szavak/O/OLY ]2].html' './szavak/O/OLY [2].html'
+fi
+if [ ! -s './szavak/Cs/CSÁJA.html' ]
+then
+	cat szavak/Cs/CSAHOS.html | sed -n '/^csája/,$ p' > './szavak/Cs/CSÁJA.html'
+	cat szavak/Cs/CSAHOS.html | sed '/^csája/,$ d' | sponge './szavak/Cs/CSAHOS.html'
+fi
 # }}}
+
+
+do_process=''
+if [ -z "${start_word:-}" ]
+then
+	do_process=1
+fi
+
+items=($(find szavak/ -name '*.html' -printf "1 "))
+progress files total ${#items[@]}
 
 find szavak/ -name '*.html' -printf '%p\t%f\n' |\
 while IFS=$'\t' read -r path szo
 do
 	szo=${szo%.*}
 	szo=${szo% \[*}
-	echo "$szo"
 	
-	./transform-article "$path" | sed -e 's/^/\t/'
+	if [ -n "${start_word:-}" -a "${start_word:-}" = "$szo" ]
+	then
+		do_process=1
+	fi
+	
+	if [ "$do_process" ]
+	then
+		echo "$szo"
+		./transform-article "$path" | sed -e 's/^/\t/'
+	fi
+	progress files change +1 show
 done

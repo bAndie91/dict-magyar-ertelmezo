@@ -3,7 +3,7 @@
 use utf8;
 use open ':std', ':utf8';
 
-%tr = (qw/0 ₀ 1 ₁ 2 ₂ 3 ₃ 4 ₄ 5 ₅ 6 ₆ 7 ₇ 8 ₈ 9 ₉ n ₙ/);
+%tr = (qw/0 ₀ 1 ₁ 2 ₂ 3 ₃ 4 ₄ 5 ₅ 6 ₆ 7 ₇ 8 ₈ 9 ₉ n ₙ/, ' ', ' ');
 
 sub subscript_char {
 	die "don't know the lower index char for '$_[0]' (whole subscript: '$_[1]') at input line $.\n" unless exists $tr{$_[0]};
@@ -13,7 +13,7 @@ sub subscript_char {
 $/ = undef;
 $_ = <STDIN>;
 
-s{(»|)<sub>(.+)</sub>}{ join('', map { subscript_char($_, $&); } split //, $2).$1 }eg;
+s{(»|)<sub>(.+?)</sub>}{ join('', map { subscript_char($_, $&); } split //, $2).$1 }eg;
 s{(?:(»)(\s*)|)\[(\d+)\]}{ $2.join('', map { subscript_char($_, $&); } split //, $3).$1 }eg;
 
 print $_;
