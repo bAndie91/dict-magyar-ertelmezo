@@ -76,7 +76,7 @@ do
 	if [ "$do_process" ]
 	then
 		echo "$szo"
-		./transform-article "$path" | sed -e 's/^/\t/'
+		./transform-article "$szo" "$path" | sed -e 's/^/\t/'
 	fi
 	progress files change +1 show
 done

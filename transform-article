@@ -2,8 +2,8 @@
 
 set -euo pipefail
 
-path=$1
-word=`basename "$path" .html`
+word=$1
+path=$2
 
 cat "$path" |\
 perl fix-content.pl "$word" |\

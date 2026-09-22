@@ -1,5 +1,6 @@
 #!/usr/bin/env perl
 
+use utf8;
 use open ':std', ':utf8';
 use Encode qw/encode decode encode_utf8 decode_utf8/;
 
@@ -11,6 +12,13 @@ $_ = <STDIN>;
 s{ϖ}{ῶ}g;
 s{š}{≠}g;
 s{ˇ}{⋅}g;
+s{\x{95}}{⋅}g if $word =~ /^(szorzó|hatvány)$/;
+if($word eq 'nyolcad')
+{
+	s{\((jele:).*?\)}{($1 ♪, ♪ [lefele lógó szárral])};
+	s{(Pontozott nyolcad.*?)\(.*?\)}{$1(♪𝅭 , ♪𝅭 [lefele lógó szárral])};
+	s{(\d+)/(\d+)}{$1⁄$2}g;
+}
 s{}{—}g;
 s{ą}{±}g;
 s{ŕ}{à}g; s{Ŕ}{À}g;
