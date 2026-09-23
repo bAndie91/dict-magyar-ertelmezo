@@ -1,0 +1,517 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> A magyar nyelv értelmező szótára</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+	<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
+	<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
+	<!--script src="js/less-1.3.3.min.js"></script-->
+	<!--append ‘#!watch’ to the browser URL, then refresh the page. -->
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="img/favicon.png">
+  
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+<body>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand"
+					 href="index.php" title="Vissza a címlapra...">A magyar nyelv értelmező szótára</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<!--
+						<li>
+							<a href="#">Előszó</a>
+						</li>
+						-->
+						
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tájékoztató<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="eloszo.php">Előszó</a>
+								</li>
+								<li>
+									<a href="utoszo.php">Utószó</a>
+								</li>
+							</ul>								
+								
+						</li>
+<!--						
+						<li>
+							<a href="#">Utószó</a>
+						</li>
+-->											<li>
+							<a href="szotar.php">Címszó lista</a>
+						</li>
+	
+					</ul>
+
+					<form class="navbar-form navbar-left" role="search" action="kereses.php">
+						<div class="form-group">
+<input class='form-control' type='text' placeholder='Keresés a szövegben' name='kereses' value=''>                                                
+						</div> 
+						<div class="form-group"> 
+						
+                                                <label class='checkbox' style='font-weight:normal; color:#666'> &nbsp; Csak címszóban:&nbsp;
+                                                <input type="checkbox" class="" name='csakcimben' 
+                                                    >
+                                                </label>
+                                                </div>
+						&nbsp; <button type="submit" class="btn	btn-default"><span class="glyphicon glyphicon-search"></span></button>
+					</form>
+					
+				</div>
+			</nav>
+				<div  class="tipp"><strong>Súgó:</strong> A kereső alapesetben a szótár teljes szövegében keres. A találatok húszasával lapozhatók a nyíl ikonokkal előre és hátra. A "kuty" kezdetű szócikkekhez pipálja ki a <em>Csak címszóban</em> opciót és ezt írja a keresőmezőbe (csillaggal a végén): <strong>kuty*</strong> (és nyomja meg az Enter-t vagy kattintson a nagyító ikonra). A más szócikkekre való hivatkozásokon (<strong>v. ö.</strong> és <strong>l.</strong>) nincsenek linkek, ezért a hivatkozott címszóra rá kell keresni.</div>
+<div class="row clearfix">
+<div class="col-md-12 column">
+
+<BR/> 
+<div class="text-center">
+<B>ELŐSZÓ</B>
+</div>
+<BR/>
+
+<div class="behuzott"><em>A Magyar Nyelv Értelmező Szótára (a továbbiakban rövidítve: ÉrtSz.) mintegy hatvanezer szócikkben a magyar irodalmi és köznyelv szókincsének a törzsállományát öleli fel. A szócikkek az egyes címszavaknak, valamint a velük alkotható szókapcsolatoknak, közkeletű kifejezéseknek, továbbá a leggyakoribb szólásoknak, szóláshasonlatoknak, szójárásoknak és közmondásoknak a jelentéseit értelmezik, azaz körülírják, nyelvünk más szavaival magyarázzák. Az ÉrtSz. ezenfelül, a szócikkek végén sok-sok ezer, az egyes címszavakhoz kapcsolódó összetételt és származékot sorol fel értelmezés nélkül, ezzel is szemléltetve a magyar szókincs gazdagságát. A szótár legfőbb célja, hogy anyagának sokrétűségével tudatosítsa szókincsünk árnyalatosságát, anyanyelvünk hajlékonyságát, kifejező erejét.</em></DIV>
+<div class="behuzott"><em>A hatkötetes ÉrtSz. a nemzetközi értelmező szótári irodalomban egyre inkább terjedő középszótárak típusába tartozik. Részletezőbb, mint a rendszerint egy-két kötetes kézi szótárak, iskolai és zsebszótárak, de kevésbé részletező, mint a nagy terjedelmű, tíz-húsz vagy még több kötetes, úgynevezett nagyszótárak. Ebben a terjedelemben elsősorban a mai magyar köznyelvnek és a legutóbbi másfél évszázad magyar irodalmi nyelvének bizonyos válogatással készült leíró jellegű szótára. A régebbi nyelvállapotot éppen ezért csak kivételesen, régi irodalmunk legismertebb alkotásaira való tekintettel veszi figyelembe.</em></DIV>
+<div class="behuzott"><em>Az ÉrtSz. azonban nem elégszik meg a nyelvi tények és fejlemények puszta számbavételével, hanem a nyelvhelyesség szempontjainak megfelelően értékeli, minősíti is őket. Ezzel a nyelvhasználat szabályozását, nyelvünknek helyes irányban való fejlesztését, tökéletesítését igyekszik segíteni.</em></DIV>
+<div class="behuzott"><em>E mű a szocializmus építésének első évtizedében, a hazánkban végbemenő nagy társadalmi, gazdasági, politikai és szellemi változások időszakában készült. Ez a mélyreható, forradalmi átalakulás természetesen nyelvünk életében, mindenekelőtt szókincsünkben is híven tükröződik. Az ÉrtSz. célja, hogy egyfelől nemzeti nyelvünknek klasszikus íróinktól kimunkált, hagyományos szó- és kifejezéskincsét összegyűjtse, és a következő nemzedékek nyelvhasználatának alapjául továbbörökítse, másfelől pedig számba vegye és értékelje a keletkező új nyelvi fejleményeket az élet kívánta szükségességnek, célszerűségnek, valamint a nyelv szerkezeti törvényszerűségeinek megfelelően.</em></DIV>
+<div class="behuzott"><em>Az egynyelvű értelmező szótárak készítésében sok más nemzet megelőzött bennünket. Mindamellett Czuczor Gergelynek és Fogarasi Jánosnak a múlt század második felében közzétett, szintén hatkötetes, a maga nemében hibái ellenére is kiváló magyar szótára annak idején jelentős alkotás volt, s ma is értékes hagyomány és alap számunkra. Mivel azonban ez a nagy kezdemény méltó folytatás nélkül maradt, hazánkban az értelmező szótár műfaja még a műveltebbek körében is alig-alig vált ismertté. Pedig az ilyen jellegű szótár a nemzeti és anyanyelvi művelődésnek egyik nélkülözhetetlen eszköze. Az ÉrtSz. elsősorban az iskola, a felnövő új értelmiség számára lehet a magyar nyelvhasználat fontos tanácsadója. Hasznos munkaeszköze lehet az íróknak, a fordítóknak, lektoroknak, előadóknak, a kiadóvállalatok, szerkesztőségek, a hivatalok dolgozóinak. Az érdeklődők felvilágosítást találhatnak benne számos ritka, kevéssé ismert vagy bizonytalan értelmű szavunk jelentéseire, a legfontosabb szavak ragos alakjaira és nyelvtani használhatóságára, helyesírására és ejtésére, valamint stílusértékére vonatkozólag. Mindaddig, amíg új és korszerű szakszótáraink nem lesznek, még a szakemberek is haszonnal forgathatják, bár e munka szótár, nem pedig ismerettár (enciklopédia vagy lexikon), tehát nem enciklopédikus ismereteket kíván közölni, hanem céljának megfelelően csupán a szavak és a szókapcsolatok jelentését értelmezi.</em></DIV>
+<div class="behuzott"><em>Szótárunk segítségére kíván lenni a magyarul tanuló vagy tudó idegen ajkúaknak, továbbá a kétnyelvű (magyar és idegen nyelvű) szótárak szerkesztőinek is. Alapja lehet egy kisebb, egykötetes értelmező szótárnak és a tervezett nagy akadémiai szótárnak. Nyelvünk búvárai, főként a leíró nyelvészet, a jelentéstan és a stilisztika művelői szintén meríthetnek belőle. Végül pedig, mint a mai magyar szókincsnek a leltára, az eljövendő száradok nyelvtörténeti vizsgálatai számára is forrás lehet.</em></DIV>
+<div class="behuzott"><em>Bízunk benne, hogy az ÉrtSz. – rendeltetésének megfelelően – művelődési forradalmunknak egyik fegyvere, anyanyelvünk gazdagságának, szépségeinek tudatosítója, a művelt nyelvhasználat irányítója és irodalmi nyelvünk további fejlődésének egyik ösztönzője lesz.</em></DIV>
+<div class="text-center">*</DIV>
+<div class="behuzott"><em>A Magyar Tudományos Akadémia Nyelvtudományi Intézete e mű első kötetének kibocsátása alkalmával köszönetet mond pártunknak és kormányunknak, népi demokratikus államunknak, a haladás szellemében megújított Akadémiánknak azért a nagyarányú támogatásért, amellyel vállalkozását a megvalósuláshoz segítve a magyar nyelvtudomány immár évszázados mulasztásának pótlását lehetővé tette. Teljes tudatában vagyunk annak, hogy e szótár létrehozásának anyagi alapját, szervezeti formáját, tudományos megalapozottságát csak szocialista társadalmi rendünk valósíthatta meg, amely áldozatkészségével is bebizonyította, hogy a tudomány pártolását, az anyanyelvi műveltség fejlesztését, a dolgozó tömegek szellemi kiművelését valóban fontos feladatának tekinti. Reméljük, hogy e mű betölti hivatását, s méltónak bizonyul arra az áldozatos segítségre, amelynek létrejöttét köszönheti.</em></DIV>
+<BR/><BR/>
+<BR/> 
+
+<div class="text-center">
+<strong>TÁJÉKOZTATÓ</strong>
+</div>
+<BR/>
+
+JELÖLÉSEK HASZNÁLATA
+<BR/>
+
+<BR/>[<em>Az eredeti szótár rövidítéseit a könnyebb kereshetőség érdekében feloldottuk.</em>]
+<BR/>
+<BR/><em>Rövidítések feloldása</em>
+
+<table width="200" cellpadding="2">
+
+<tr><td>af</td><td>alapfok</td></tr><tr><td>állítm</td><td>állítmány</td></tr><tr><td>ált</td><td>általános</td></tr><tr><td>ált.</td><td>általában</td></tr><tr><td>birt</td><td>birtokos</td></tr><tr><td>egysz</td><td>egyes szám</td></tr><tr><td>eh</td><td>ehelyett</td></tr><tr><td>er.</td><td>eredetileg</td></tr><tr><td>es.</td><td>esetleg</td></tr><tr><td>felsz</td><td>felszólító mód</td></tr><tr><td>felt</td><td>feltételes mód</td></tr><tr><td>ff</td><td>felső fok</td></tr><tr><td>fm</td><td>főmondat</td></tr><tr><td>fn</td><td>főnév(i)</td></tr><tr><td>hat</td><td>határozó(i)</td></tr><tr><td>hsz</td><td>határozószó</td></tr><tr><td>htl</td><td>határozatlan</td></tr><tr><td>ign</td><td>igenév</td></tr><tr><td>ik</td><td>igekötő</td></tr><tr><td>isz</td><td>indulatszó</td></tr><tr><td>kf</td><td>középfok</td></tr><tr><td>ksz</td><td>kötőszó</td></tr><tr><td>m</td><td>mondat</td></tr><tr><td>mm</td><td>mellékmondat</td></tr><tr><td>mn</td><td>melléknév(i)</td></tr><tr><td>msz</td><td>mondatszó</td></tr><tr><td>mut</td><td>mutató</td></tr><tr><td>műv</td><td>műveltető</td></tr><tr><td>nu</td><td>névutó</td></tr><tr><td>ö.</td><td>összetétel</td></tr><tr><td>sz</td><td>személy</td></tr><tr><td>szn</td><td>számnév</td></tr><tr><td>szrag</td><td>személyrag</td></tr><tr><td>sztl</td><td>személytelen</td></tr><tr><td>tbsz</td><td>többes szám</td></tr><tr><td>tn</td><td>tárgytalan</td></tr><tr><td>ts</td><td>tárgyas</td></tr><tr><td>tul</td><td>tulajdonnév</td></tr><tr><td>von</td><td>vonatkozó</td></tr>
+
+</table>
+
+
+
+<BR/>
+<BR/>[<em>Az elektronikus kidásban az alábbi jelöléseket használtuk:</em>]<BR/>
+<BR/><strong>Címszó</strong>
+<BR/><strong>Címszó [1]</strong>, <strong>Címszó [2]</strong>
+<BR/>Hierarchikus behúzás:
+<BR/>&nbsp;&nbsp;&nbsp;&nbsp;I. első szintű jelentés
+<BR/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A. második szintű jelentés
+<BR/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. harmadik szintű jelentés
+<BR/>(<strong>Stílus</strong>)
+<BR/><span class="szotar-arial">Példa</span>
+<BR/>&nbsp;&nbsp;&nbsp;&nbsp;<em>Idézet</em>
+<BR/>(Idézet forrása, szerzője)
+<BR/>
+<BR/>
+<table width="100%" cellpadding="2">
+
+<tr><td width="100">..</td><td>ragos alak előtt: a változó tövű címszónak azt a részét jelöli az utolsó betű híján, amely változatlanul marad</td></tr>
+<tr><td>...</td><td>értelmezett szókapcsolatban, szabad példában, idézetben: a szövegből kihagyott részre utal</td></tr>
+<tr><td>....</td><td>idézetben: azt jelöli, hogy az író szövegében is benne van a gondolat félbeszakításának jele, a három vagy a négy pont</td></tr>
+<tr><td>–</td><td>formaszavak szócikkében: olyan megjegyzést, magyarázatot vagy egyéb részletet bevezető jel, amelyre a megelőző értelmezés (jelentés vagy jelentésárnyalat körülírása) még érvényes</td></tr>
+<tr><td>–1<small><sub>1</sub></small>, –1<small><sub>2</sub></small></td><td>az azonos számú jelentéshez tartozó ugyanilyen megjegyzést, magyarázatot bevezető jel és számozás</td></tr>
+<tr><td>–a<small><sub>1</sub></small>, –a<small><sub>2</sub></small></td><td>az azonos betűvel jelölt jelentésárnyalathoz tartozó ugyanilyen megjegyzést, magyarázatot bevezető jel és számozás</td></tr>
+<tr><td>|</td><td>idézetben: annak jele, hogy utána új verssor kezdődik</td></tr>
+<tr><td>||</td><td>annak jele, hogy utána jelentésárnyalat következik</td></tr>
+<tr><td>( )</td><td>a szokásos használaton kívül: rag v. vagylagos alak esetén a ritkán használt alakot magában foglaló jel; értelmezésben: a második szófaji érték kiegészítő értelmezését magában foglaló zárójel</td></tr>
+<tr><td>&lt; &gt;</td><td>fogalomköri, ill. használatköri megszorítást, értelmezés helyett adott körülírást magában foglaló, nyelvtani és jelentéstani megjegyzést összefoglaló zárójel</td></tr>
+<tr><td>[ ]</td><td>a címszó, a ragos alak v. alakváltozat után: a kiejtés vagy az elválasztás, vagy mindkettő jelölését tartalmazó zárójel, idézetben: a szerkesztőségtől származó kiegészítést v. magyarázatot magában foglaló zárójel</td></tr>
+<tr><td>→, ←</td><td>a szókapcsolat értelmezése annak a szónak szócikkében található, amelyre a nyíl hegye mutat, azt jelöli, hogy a nyíl hegye felől levő ragos vagy jellel ellátott alak vagy összetétel külön címszó a szótárban</td></tr>
+<tr><td>*</td><td>a vele jelölt szó általában kerülendő, ill. felesleges, a szó a vele jelölt jelentésben helytelen, ill. kerülendő</td></tr>
+<tr><td>□</td><td>utána irodalmi idézet következik</td></tr>
+
+</table>
+
+<BR/>[<em>Az alábbi rész az eredeti kiadás konvencióira vonatkozik, az elektronikus kiadásé a fentieknek megfelelően ettől eltérő</em>]
+<div class="text-center">
+<BR/>
+<strong>I.<BR/>AZ ÉRTELMEZŐ SZÓTÁR SZERKEZETE</strong>
+</div>
+<BR/>
+<div class="behuzott">Az ÉrtSz. a szavakat ábécérendbe szedve, szócikkekben dolgozza fel. Szócikkeink kétfélék: <em>önálló</em> szócikkek és <em>utaló</em> szócikkek.
+</div><div class="behuzott">Az <em>önálló</em> szócikk a lehetőséghez képest a címszóra vonatkozó valamennyi tudnivalót magában foglalja. Más szócikkre csak kivételesen, akkor hivatkozik, ha a tudnivaló – pl. egy több szóból álló szókapcsolat, szóláshasonlat, szólás magyarázata – több szócikkben is tárgyalható, s ezért azt a szerkesztési szabályainkban megállapított megfelelőbb helyen, egy másik szócikkben adtuk meg. Az ÉrtSz. szócikkeinek zöme önálló szócikk.
+</div><div class="behuzott">Az <em>utaló</em> szócikk érdemi tájékoztatást a címszóról nem nyújt, hanem csak azt közli, hogy a tüzetes felvilágosítást melyik önálló szócikkben kell keresni. Utalócikkbe az önálló címszóknak csupán azok az alak- és írásváltozatai, valamint azok a ragos alakjai kerültek, amelyek ábécérendben messze esnek a szótározott alaktól. Ilyen pl. az <em>attól, a chablon, a kalán;</em> ezek az <em>az</em> névmásra, a <em>sablon,</em> illetve <em>a kanál</em> főnév szócikkére utalnak.
+</div><div class="behuzott">Az önálló szócikkek címszavát a szócikk betűitől erősen eltérő, kereséskor jól szembe ötlő kövér betűvel <strong>(kanál), </strong>az utaló szócikkekét ezektől is könnyen megkülönböztethető félkövér betűvel (kalán) szedettük.
+</div><div class="behuzott">Minden szócikk legalább két, de gyakran három fő részre oszlik: <em>a bevezető részre</em> vagy <em>szócikkfejre,</em> a voltaképpeni <em>értelmező</em> és <em>szemléltető részre,</em> valamint a <em>kiegészítő részre vagy szócikkvégre. Az</em> önálló szócikk majd mindig ebből a három fő részből, az utaló rendszerint csak kettőből, szócikkfejből és egyszavas értelmezésből, illetve utalásból áll.
+</div>
+
+<br/><br/><div class="text-center"><strong>1. A szócikkfej</strong>
+<br/>
+<br/>
+</div><div class="behuzott">A <em>szócikkfej</em> a címszóra mint szótári egységre vonatkozó legfontosabb adatokat tartalmazza. Ezek sorrendben a következők:
+</div><div class="behuzott">a) a <em>címszó</em>;
+</div><div class="behuzott">b) a <em>homonímák</em>, illetőleg az <em>álhomonímák</em> jelölése; az előbbieket a címszó után következő kis arab index-szám jelzi, pl. <strong>áll</strong>1 ige és <strong>áll</strong>2 fn; <em>az</em> utóbbiakat zárójelbe tett ugyanilyen arab szám, pl. <strong>akna</strong>(1) fn és <strong>akna</strong>(2) fn;
+</div><div class="behuzott">c) a <em>nyelvhelyességi szempontból</em> kifogásolható szók egészére közvetlenül a címszó után csillag hívja fel a figyelmet, pl. <strong>ákontó*; dakszli*; kultúrház*;</strong>
+</div><div class="behuzott">d) a <em>kiejtés</em> szögletes zárójelben, világos álló szedéssel, rendszerint csak a szokásostól eltérő vagy az írásképből pontosan meg nem állapítható módon ejtett elemre szorítkozva, pl. <strong>berkenye</strong> [e-ë-e]; <strong>charta</strong> [karta v. khártá];
+</div><div class="behuzott">e) az <em>elválasztás módja</em> szögletes zárójelben, dőlt betűvel, a kötőjelet közvetlenül megelőző és a közvetlenül utána következő betűre korlátozva; pl. <strong>alapelv</strong> [p-e];
+</div><div class="behuzott">f) a <em>szófaj jelölése</em> zárójel nélkül, világos álló szedéssel, a rövidítésjegyzékben jelzett módon rövidítve, pl. <strong>apa</strong> fn; <strong>árva</strong> mn és fn; <strong>aszik</strong> tn ige; <strong>át</strong> hsz, <strong>ik</strong> és <strong>nu</strong>; <strong>csak </strong>hsz és ksz;
+</div><div class="behuzott">g) a főbb <em>ragos alakok</em>, rendszerint csak maga a rag, kötőjel vagy két pont után, dőlt betűvel, zárójel nélkül, egymástól vesszővel, hosszú sorozat esetén pontosvesszővel elválasztva; ha szükséges, a ragos alak kiejtését is jelöljük, pl. <strong>állam</strong> fn -ot, -a; <strong>ámuldozik</strong> tn ige <em>-ok, -ol; -tam, -ott; -nék, -nál, -na; -zon;</em> <strong>cserélget</strong> [e-e] ige <em>-tem, -ett [e, ë];.. essen</em> [e-ë];
+</div><div class="behuzott">h) a <em>nyelvtani megjegyzés</em> kerek zárójelben, világos álló betűvel, a szakkifejezések a rövidítésjegyzékben jelzett módon rövidítve, pl. <strong>apus</strong> fn -t, (-ok), -a (főként egysz-ban, ritk. birt szraggal); <strong>búj</strong>... (rendsz. határozott tárggyal); <strong>dörren</strong>... (főleg 3. sz-ben);
+</div><div class="behuzott">i) az <em>alakváltozatok</em> zárójel nélkül, az utaló címszóéval azonos félkövér betűvel, egymástól vesszővel elválasztva s ahol szükséges, stilisztikai minősítéssel, pl. <strong>almárium </strong>fn... <strong>almáriom</strong>, <em>(rég)</em> <strong>almárjom</strong>; <strong>bendő... </strong>fn..., <em>(nép)</em> <strong>böndő</strong>;
+</div><div class="behuzott">j) az <em>írásváltozat</em> kerek zárójelben, félkövér betűvel, pl. <strong>abszolúte </strong>[ë] <em>hsz (rég</em> írva: absolute is); <strong>balerina... </strong><em>(rég</em> írva: ballerina is); <strong>centralizáció... </strong>fn... <em>(rég</em> írva: centralisatio is);
+</div><div class="behuzott">k) a <em>stiláris érték jelölése</em>, amely az egész szóra és az alakváltozatokra vonatkozik, kerek zárójelben, dőlt betűvel, a rövidítésjegyzékben jelzett módon rövidítve, pl. <strong>áristom </strong>fn <em>(nép, rég); <strong></em>bőgőmasina </strong>fn (biz, <em>tréf, gúny); <strong></em>deklaráció... </strong>fn <em>(hiv, vál).</em> Az a stílusminősítés, amely csak az alakváltozatra vonatkozik, megelőzi az alakváltozatot, pl. <strong>adtáz </strong>tn ige <em>-tam, -ott, -zon, (ritk)</em> adtázik <em>(nép, rég).</em> Ez a jelölés arra utal, hogy az adtáz(ik) szó a maga egészében népies és régies, ikes változata pedig ritka.
+</div><div class="behuzott">Valamennyi adat közlésére viszonylag ritkán van szükség. Azt, hogy adott esetben mit közlünk s mit nem, a címszó természete dönti el. Pl. az elválasztás módját csak összetett vagy idegen eredetű címszó után, ott is csak akkor tüntetjük fel, ha a helyes eljárás tekintetében kétség támadhat. Ellenben épp az összetett címszó után mellőzzük a kiejtés jelölését, ha az összetételnek mindkét tagja címszavunk, sőt még a ragos alakok felsorolását is, ha az ilyen címszónak legalább az utótagja címszó, s az ott közölt adat az összetételre is érvényes.
+</div><div class="behuzott">A címszónak a szócikkfejben közölt adatai rendszerint a szócikk egészére, azaz a következő fő részben elemzett valamennyi jelentésére és jelentésárnyalatára is vonatkoznak. Ezenfelül azonban lehetnek a címszónak olyan adatai is, amelyek csak bizonyos jelentéseire vagy jelentésárnyalataira érvényesek. Az ilyen adatokat általában nem a szócikkfejben, hanem a maguk helyén, a szóban forgó jelentés sorszáma, illetve a jelentésárnyalat betűjele után, az értelmezés előtt adjuk meg. Ez a közlés csak az érintett jelentésre, illetve jelentésárnyalatra vonatkozik.
+</div>
+
+<br/><div class="text-center"><strong>2. A szócikk értelmező és szemléltető része</strong>
+<br/>
+<br/>
+
+</div><div class="behuzott">A szócikk második fő része a voltaképpeni <em>értelmező és szemléltető rész.</em> Utaló szócikkben az értelmezés mindössze egy szó. Ehhez szemléltető példa vagy idézet sohasem csatlakozik. A fő rész tagolásáról tehát csak az önálló szócikkeket illetően beszélhetünk.
+</div><div class="behuzott">Az önálló szócikk második fő része annyi kisebb részre oszlik, ahány <em>jelentése</em> és <em>jelentésárnyalata</em> van a címszónak. Minden egyes jelentés külön tárgyalási egység, ezért mindegyiknek megvan a maga félkövér arab sorszáma. A könnyebb áttekinthetőség kedvéért minden jelentést új sorban kezdünk. A jelentésárnyalat a jelentéshez képest alacsonyabb rendű tárgyalási egység, ezért nem sorszámmal, hanem félkövér kisbetűvel jelöljük. A jelentésárnyalat nem kezdődik új sorban, csak betűjelét tesszük két, eléje szedett függőleges vonalkával szembeszökőbbé: ||<strong>a</strong>. Ha a címszónak csak egy jelentése van, a bekezdés éléről elhagyjuk a sorszámot; az árnyalat előtt azonban akkor is ott áll a kezdetét jelző <strong>||a</strong>., ha nem következik utána több árnyalat: ||<strong>b</strong>., ||<strong>c. </strong>stb.
+</div><div class="behuzott">Minden félkövér arab számmal vagy két függőleges vonalkával és félkövér betűvel jelzett tárgyalási egység további két részre oszlik: a szóban forgó jelentés, illetve árnyalat magyarázatára, azaz a tulajdonképpeni értelmezésre, s a címszónak ebben a jelentésben, illetve jelentésárnyalatban való használatát szemléltető <em>példákra</em> és <em>irodalmi idézetekre</em>. A magyarázat szedése álló betű, a példáké, példamondatoké és idézeteké dőlt betű. Az idézet előtt – ha több idézetet is közlünk, akkor az első előtt – egy kis négyzet (□) áll; az idézet vagy az idézetek után, csupa nagybetűvel szedve, az idézet szerzőjének neve következik, legtöbbször rövidítve.
+</div><div class="behuzott">A példákban és a példamondatokban a címszót helymegtakarítás céljából egy kis hullámvonallal (tildével: ~ ) helyettesítjük. Ez a jel csak a címszónak a szócikkfejben közölt alakját, ikes igéknél az <em>-ik</em> nélküli alakot pótolhatja. Ha a címszónak a hozzá járuló rag előtt csak végső magánhangzója nyúlik meg, a tildére vesszőt teszünk <strong>(alma: ~'</strong><em>t, ~'val =</em> almát, almával); ha a címszó ennél nagyobb változást szenved, teljes egészében kiírjuk <strong>(csepereg: </strong><em>csepergett; <strong></em>dohány: </strong><em>dohánnyal).</em> Az idézetekben sohasem használunk tildét.
+</div><div class="behuzott">A címszónak a tárgyalt jelentésben vagy jelentésárnyalatban más szavakkal való gyakori kapcsolatai között nemritkán olyan is akad, amely további magyarázatra szorul. Az ilyen kapcsolatot a példák közé a maga helyére iktatjuk, utána azonban kettőspontot teszünk, s mielőtt a kapcsolatok sorát folytatnók, megadjuk a szükséges magyarázatot. <em>A kemény dió</em> kapcsolat nemcsak a diófának zöld burkától megfosztott, érett termését jelentheti, hanem átvitt értelemben is használatos. A szóban forgó jelentésárnyalatot szemléltető példasor a <em>dió</em> szócikkében ezért így alakul: <em>(átv) Kemény v. nehéz* ~:</em> nehezen megoldható, fogas kérdés, feladat; nehezen elintézhető ügy; <em>feltör vmilyen ~t v. feltöri a ~t. Keményebb ~t is feltörtek már.</em>
+</div><div class="behuzott">Ugyanezt a kapcsolatot természetesen <em>a kemény</em> és a <em>nehéz</em> címszó megfelelő jelentésénél is nyilvántartjuk, de itt a magyarázatot már nem ismételjük meg, hanem külön jellel – <em>a dió</em> szóra mutató kis nyíllal – jelöljük, hogy a magyarázat annak szócikkében található (például <em>a kemény</em> szócikkében így: ~ <em>dió </em><span class="szotar-symbol">Ź).</span>
+</div><div class="behuzott">Néha az ilyen, nem magától értetődő kapcsolatnak nemcsak egy, hanem több jelentése is van, s így a kapcsolat magyarázatát is tagolnunk kell. Az ilyen jelentéseket is az ábécé betűivel jelöljük, de a betűjeleket nem félkövér, hanem világos álló betűvel szedetjük, előlük a két függőleges vonalkát elhagyjuk, utánuk pedig pont helyett fél zárójelet teszünk: a), b), c) stb. Az egyes jelentéseket pontosvessző különíti el egymástól. Így pl. az <strong>ad</strong> ige I. 2. jelentésében: ||<strong>a.</strong> ts <em>Zálogba~:</em> a) &lt;vmely tárgyat&gt; zálogként átnyújt, átenged; b) &lt;birtokot&gt; elzálogosít.
+</div><div class="behuzott">Ha egy szónak igen sok a jelentése, akkor a könnyebb áttekintés kedvéért a rokon jelentésekből magasabb rendű tárgyalási egységeket, <em>jelentéscsoportokat</em> alakítunk. A jelentéscsoportokat dőlt római számmal jelöljük. A dőlt római szám után közvetlenül rendszerint összefoglaló értelmezés következik. Az összefoglaló értelmezést sem példával, sem idézettel nem szemléltetjük. Ez után a bevezetés után következik az egyes jelentések és jelentésárnyalatok részletes értelmezése és szemléltetése a már ismertetett módon.
+</div><div class="behuzott">A jelentések arab sorszámozása minden csoportban újra kezdődik.
+</div><div class="behuzott">A több szófaji értékben használatos címszó értelmezése és szemléltetése annyi nagyobb tárgyalási egységre oszlik, ahányféle szófajhoz tartozik a címszó. Ezeket az egységeket – megkülönböztetésül a jelentéscsoportoktól – félkövér római sorszám különíti el.
+</div><div class="behuzott">Az értelmező és szemléltető fő résznek némileg eltérő tagolásával találkozik az olvasó a formaszavak és indulatszavak szócikkeiben. Jelentést meghatározó jegyek hiányában az ilyen szavak csak szerepük elemzésével értelmezhetők. Ezekben a szócikkekben néha a félkövér és a dőlt római számokon kívül félkövér nagybetűket is használunk, a jelentésnek, illetve a jelentésárnyalatnak megfelelő tárgyalási egységeken belül pedig bizonyos esetekben –11, –12, –21, –22, –23 stb., illetve –a1, –a2, –a3, –b1, –b2 stb. jelzésű kiegészítő részeket közlünk. A nagybetűvel jelölt magasabb rendű egységek és a félkövér arab számmal megkülönböztetett jelentések, körülírások mind új sorban kezdődnek, a jelentésárnyalatnak megfelelő egységek és az –11, illetve az –a1 jelzésű magyarázatok részletezését azonban folytatólagosan szedettük. Az át határozószó, igekötő és névutó szócikkének egyik részlete például ilyen: III. nu (főleg <em>vkin, vmin ~ v. rajta ~)... 8.</em> A szóban forgó idő egész tartama alatt. <em>Éveken ~; egész télen ~; egész életén ~. □ Ezer évig élek én s mindig, mindig sírok én az egész időn át. </em>B A. – 81 <em>(elav) -t</em> ragos szóval, ugyanilyen értelemben. □ <em>Esztendőt át asztal alatt Hevertek a könyvek.</em> PET. || a. A szóban forgó eseményen, jelenségen, folyamaton túljutva. <em>Sok szenvedésen ~ elérte lelki nyugalmát.</em>
+</div>
+<br/><div class="text-center"><strong>3. A szócikk vége</strong>
+<br/>
+<br/>
+</div><div class="behuzott">A szócikk harmadik fő részében, a <em>szócikk végén</em> azok a tudnivalók találhatók, amelyeket valamely okból sem a szócikkfejben, sem pedig az értelmező és szemléltető részben nem lehetett közölni. Ezek sorrendben a következők
+</div><div class="behuzott">a) Azok a <em>szóláshasonlatok</em>, amelyekben a címszó a tárgyalt jelentéseknek vagy egyikével sem azonosítható, vagy közülük többel is azonosítható jelentésben fordul elő, s így vagy egyiknek kapcsán sem lehetne tárgyalni, vagy többször is meg kellene említeni. Ilyen pl. a fa szócikkének végén ez a szóláshasonlat: <strong>Szh: </strong><em>ordít, mint a ~ba szorult féreg:</em> elkeseredetten, kétségbeesetten, kegyetlenül o.
+</div><div class="behuzott">b) A címszót magukban foglaló összes <em>szólások</em>. Ilyenek pl. a <strong>csillag</strong> címszó végén: <strong>Sz</strong><em>: lehazudja v. letagadja a ~ot az égről:</em> gátlás nélkül, szemérmetlenül hazudik, a nyilvánvaló, igaz tényt is tagadja; <em>a ~okat is lehozná az égről vkinek:</em> mindenben kedvét keresi, minden kívánságát teljesítené; <em>lelopná a ~ot is az égről:</em> amihez hozzáfér, azt ellopja.
+</div><div class="behuzott">c) A címszót magukban foglaló <em>közmondások</em>. Ilyen pl. az <strong>ad</strong> ige szócikkének végén: <em>K: Kétszer ~, ki gyorsan ~:</em> a gyors segítség ér a legtöbbet.
+</div><div class="behuzott">A szóláshasonlatokat és a szólásokat, akárcsak a több szóból álló kapcsolatokat, minden lényeges szavuk szócikkének kiegészítő részében nyilvántartjuk, de magyarázatukat csak egyszer, a szerkesztési szabályaink szerint vezérszónak minősített címszó alatt közöljük. Az érintett szócikkekben csak „ld.” vagy „ld. még” jelzéssel s a dőlt betűs vezérszóval tájékoztatjuk az olvasót, hogy melyik szócikk kiegészítő részében találja meg mind a teljes kifejezést, mind ennek magyarázatát. Az <strong>ad</strong> ige szócikkének kiegészítő része így utal azokra a szólásokra, amelyeknek egyik lényeges szava az <em>ad</em> szó: <strong>Sz: </strong>ld. <em>dió, dohány, eső, fagaras, kéz, kilincs, ló, mogyoró, szent, tapló.</em>
+</div><div class="behuzott">d) A címszó <em>igekötős összetételei</em>, részben világos álló, részben dőlt betűvel szedve. Az előbbiek ritkábbak, magyarázatra rendszerint nem szorulnak, ezért címszavaink közt sem szerepelnek. Az utóbbiak gyakoriak, részletes jelentéselemzést igényelnek, ezért a maguk ábécérendi helyén szótárunk önálló szócikkben közli őket. A felsorolást <strong>Ik:</strong> jelzés és kettőspont vezeti be, magát a címszót – akkor is, ha ikes ige – tilde pótolja. Az <strong>ás</strong> ige szócikkének végén a következő igekötős igék találhatók: <strong>Ik</strong>: <em>alá~; be~; el~; fel~; ki~; körül~; le~; meg~; végig~.</em>
+</div><div class="behuzott">e) A címszónak más szavakkal alkotott <em>összetételei</em>, végig dőlt betűvel szedve. A felsorolást <strong>Ö</strong>: jelzés és kettőspont vezeti be. Utána világos arab álló 1.-gyel jelölve előbb azokat az összetételeket soroljuk fel, amelyekben a címszó előtag, majd hasonló arab álló 2.-vel jelölve azokat, amelyekben a címszó utótag. Az első csoportban olyan összetételeket közlünk, amelyeknek jelentése jórészt magától értődik; ezért nem címszavaink. Az utóbbiak rendszerint magyarázatra szorulnak, ezért a maguk ábécérendi helyén szótárunkban egytől egyig önálló szócikkek lettek; pl. az <strong>akác</strong> szó szokásos összetételeit így mutatjuk be:
+</div><div class="behuzott"><strong>Ö</strong>: 1. <em>~illat; ~lomb; 2. gömb~.</em> Ha a címszó a közölt összetételekben csak mint előtag vagy csak mint utótag kerül elő, a megkülönböztető arab számjelzés elmarad. Ennek megfelelően az akácfa összetételeit így közöljük <strong>Ö</strong>: ~erdő; ~<em>virág; <strong></em>a derék </strong>főnévét pedig így: <strong>Ö</strong><em>: szekér~.</em>
+</div><div class="behuzott">f) A címszó leggyakoribb <em>közvetlen származékai</em>, fontosabb és önmagukat magyarázó <em>közvetett származékai</em> a felsorolást megelőző külön jel nélkül következnek egymás után, félkövér betűvel szedve. Minthogy a címszónak részletes jelentéselemzést igénylő származékai önálló szócikkbe kerültek, és a maguk ábécérendi helyén, a címszó szócikkének tőszomszédságában könnyen megtalálhatók, itt csak azokat a magyarázatra alig szoruló származékokat soroljuk fel, amelyeket helyszűke miatt nem tehettünk meg címszónak. Pl. a <strong>begyűr</strong> címszónak ezek a felsorolt származékai: <strong>hegyűrés</strong>; <strong>begyűrő</strong>; <strong>begyűrődik</strong>; <strong>begyűrt.</strong>
+</div><div class="behuzott">Rendszerint nem közöljük az igék <em>-andó, -endő, -hat, -het, -(t)atik, -(t)etik</em> képzős származékait.
+</div><div class="behuzott">A szócikkvégi származékokat szoros betűrendben soroljuk fel, minden külön megjegyzés és utalás nélkül. A szófajt csak azokban a ritka esetekben jelöljük, ha a származék több szófajhoz tartozik, és azonos alakú szópárja szótárunknak címszava. Így a bogár szócikke végén <strong>„bogarász</strong> fn" olvasható, mert <em>a bogarász</em> ige címszó.
+</div>
+<BR/>
+<div class="text-center">
+<strong>
+II.<BR/>A CIMSZAVAK</strong>
+
+</div>
+<br/>
+<div class="behuzott">Az ÉrtSz. részint a XIX. századi nemzeti klasszikusok nyelvének, részint a XX. században beszélt és írott magyar köznyelvnek, a tágabb értelemben vett magyar társalgási és irodalmi nyelvnek szó- és kifejezéskészletét dolgozza fel. A XIX. századi nemzeti klasszikusok nyelvének, valamint a XX. századi beszélt és írott magyar köznyelvnek a szókincse azonban olyan gazdag, hogy a szótár korlátozott terjedelme miatt bizonyos válogatásra volt szükség.
+</div><div class="behuzott">A magyar szavak, szókapcsolatok és szójelentések sokaságából az ÉrtSz. szerkesztősége azokat a nyelvi adatokat választotta ki és mutatja be a csaknem hatvanezer címszó szócikkében, amelyeket nyelvünk közkeletű, széles körökben ismert, gyakran használt, a gondolatközlésben, a mindennapi érintkezésben fontos szavainak tekint.
+</div><div class="behuzott">E mellett az általános elv mellett azonban egyéb meggondolások is érvényesültek annak a kérdésnek az eldöntésében, hogy nyelvünknek ez vagy amaz a szava helyet kaphat-e az ÉrtSz. címszavai között. A szótári címszókészlet terjedelmének, határainak megállapításában mérlegelnünk kellett az egyes szavak helyét a magyar szókészletben, s figyelembe kellett vennünk különféle alaki, szófaji és jelentéstani szempontokat is.</div><div class="behuzott">
+</div>
+
+<br/><div class="text-center"><strong>1. A homonimák és az álhomonimák</strong>
+</div>
+<BR/>
+
+<div class="behuzott">Azonos alakú (homoním) szavaink közül valódi homonímának tekintjük és arab index-számmal megkülönböztetve külön szócikkbe foglaljuk az olyan szavakat,
+</div><div class="behuzott">1. amelyek az etimológiai kutatások mai eredményei szerint teljesen különböző eredetűek, mint pl. áll1 ige 'az alatta levő sík felülethez képest merőleges helyzetben van', valamint áll2 fn 'az arcnak a száj alatt levő, többé-kevésbé előreugró kerekded része<strong>';</strong>
+</div><div class="behuzott">2. amelyek – jövevényszókként – nyelvünkbe más-más közvetítéssel és eltérő jelentéssel, egymástól függetlenül kerültek, még akkor is<em>,</em> ha végső soron azonos eredetűek, mint pl. akkord1 fn 'zenei hangok egyidejű hangzása', valamint akkord2 fn 'bérrendszer'.
+</div><div class="behuzott">Álhomonímának tekintjük és zárójelbe tett arab index-számmal megkülönböztetve külön szócikkbe foglaljuk az olyan egyező alakú szavakat, amelyek kétséget kizáróan vagy feltehetően azonos eredetűek, tehát nem igazi homonímák ugyan, de
+</div><div class="behuzott">1. bizonyos jelentésükben eltérő ejtésűek, mint pl. <strong>hegyes</strong>(1) [é-ë] mn <em>-en</em>, <em>-ebb</em> 'olyan &lt;tájék, terület&gt;, amelyen hegyek vannak', valamint <strong>hegyes</strong>(2) [é-ë] mn <em>-en</em>, <em>-ebb</em> 'csúcsban, hegyben végződő &lt;eszköz, tárgy&gt;';
+</div><div class="behuzott">2. amelyeknél a jelentésbeli szétválás alaki elkülönüléssel jár együtt, mint pl. <strong>daru</strong>(1) fn -t v. <em>(rég) darvat, darvak v.</em> (ritk.) <em>-k; darva v.</em> -ja 'hosszú nyakú gázló madár (Grus grus)' és <strong>daru</strong>(2) fn <em>-t</em>, <em>ja</em> 'olyan gép, mely a terhet felemeli';
+</div><div class="behuzott">3. amelyeknek szócsaládja világosan szétválik, mint pl. <strong>biztos</strong>(1) mn és fn 'valóságnak vehető (dolog); biztonságot nyújtó', <strong>Ö</strong>: <em>bomba~; gáz~; maga~; tűz~;</em> üzem<em>~</em> és <strong>biztos</strong>(2) fn... 'hivatalos személy', <strong>Ö</strong>: <em>csend~; had~; kormány~; nép~; út~; vizsga~; vizsgáló~.</em>
+</div><div class="behuzott">Az olyan azonos eredetű és alakú szavakat, amelyek főnévként és igeként egyaránt használatosak (az úgyneveszett igenévszókat), szintén álhomonímának tekintjük, mivel szócsaládjuk élesen elkülönül. Ilyenek pl. <strong>agarász</strong>(1) ige és <strong>agarász</strong>(2) fn.
+</div>
+<BR/><BR/>
+
+<div class="text-center">
+<strong>III.<BR/>A NYELVTANI TUDNIVALÓK</strong>
+</div>
+
+<br/><div class="text-center"><strong>1. A kiejtés jelölése</strong>
+</div>
+<BR/>
+<div class="behuzott">A címszó kiejtését általában minden olyan esetben feltüntettük, amikor a szó helyes köznyelvi ejtése nem következik egyértelműen a szó írott alakjából, hanem többé-kevésbé eltér tőle. Néha ott is jelöltük a kiejtést, ahol teljesen megfelel a szó írásmódjának. Ezzel fel akarjuk hívni a figyelmet arra, hogy más ejtésmód nem helyes. A <em>h</em> végű szavaknak (valamint származékaiknak és összetételeiknek) a kiejtését mindig feltüntetjük, mert nem kivétel nélküli szabály az, hogy a szóvégi <em>h</em>-t nem ejtjük; ezért pl. doh szavunk kiejtését is jelöljük: [doh]. Az <em>e</em> betűvel jelölt hang ejtését általában minden egyszerű címszó mellett közöljük.
+</div><div class="behuzott">A szótár a szóalakok helyes kiejtését lehetőleg csak a magyar ábécé betűivel jelöli. Bizonyos esetekben olyan hangok ejtését is közöljük, amelyekre nincs jel a magyar ábécében. Ezeket az ábécénk betűivel nem jelölhető hangokat a magyar nyelvészeti irodalomban általánossá vált mellékjeles betűkkel jelöljük. Ilyenek a következők
+</div><div class="behuzott">ë (ajakkerekítés nélkül a rövid <em>ö</em> hang nyelvállásával képzett magánhangzó);
+</div><div class="behuzott"><span class="szotar-times">ę</span> (hosszú nyílt e; főleg indulatszókban és néhány idegen szóban);
+</div><div class="behuzott">â (hosszú a; főleg indulatszókban);
+</div><div class="behuzott"><span class="szotar-times">ĺ</span> (röviden ejtett á; indulatszókban és zenei hangnevekben).
+</div><div class="behuzott">Ez utóbbi három hangjelet igen ritkán alkalmaztuk.
+</div><div class="behuzott">Ha a címszónak csak egy vagy néhány hangját ejtjük az írott alaktól eltérően, akkor csupán a kérdéses egy vagy több hangot vagy a szorosan összetartozó hangcsoportot adjuk meg szögletes zárójelben. Pl. ez a jelölés: kétség [ccs] azt jelenti, hogy a szót helyesen <em>kéccség-nek</em> ejtjük; betyár [ë] azt jelenti, hogy a szót <em>bëtyár-nak</em> ejti az, aki a magyarban különbséget tesz e és ë közt; becstelen [ë-e-e] azt, hogy a szó első e betűjét helyesen zárt ë-nek, a másodikat és a harmadikat nyílt e-nek olvassuk az ëző kiejtésben.
+</div><div class="behuzott">Néhány indulatszónak a kiejtése a szó jelentése, szerepe szerint változik. Ilyen esetekben – pl. az <em>ej</em> címszó cikkében – az ejtést nem a címszó után, hanem az egyes jelentéseknél közöljük szögletes zárójelben.
+</div><div class="behuzott">A szabályostól eltérő hangsúlyozásra vonatkozó tudnivalót kerek zárójelben a nyelvtani megjegyzésekhez hasonlóan megszövegezve közöljük.
+</div><div class="behuzott">Megtaláljuk a szótárban a címszó után megadott ragok, jelek, illetve ragos, jeles alakok kiejtését és az esetleges alakváltozatok kiejtését is, ha ennek jelölése valamely szempontból szükségesnek látszik.
+</div><div class="behuzott">A toldalékok után általában csak a kiírt toldalékok, illetve a kiírt toldalékos szórész ejtését közöljük, mégpedig két-három különböző szóalakét, illetve toldalékét közös zárójelben, ha csupán két-bárom e kiejtése van feltüntetve. A <strong>beszél</strong> [e] ige <em>-t,</em> <em>-jen</em> [ë] tehát azt jelenti, hogy <em>a beszéljen</em> felszólító alak utolsó e-jének ëző ejtése ë<em>.</em> Ez a jelölés: <strong>bővelked</strong> k [e-ë] tn ige <em>-tem, -ett, jék</em> (<em>-jen</em>) [e, ë, ë]<em> –</em> arra utal, hogy a <em>bővelkedik</em> ige első e-jének kiejtése nyílt e hang, a második e ejtése zárt ë hang, az ige múlt idejének 1. személyű <em>bővelkedtem</em> alakjában az utolsó <em>e</em> ejtése nyílt <em>e,</em> a 3. szentélyű <em>bővelkedett</em> alak utolsó szótagjában zárt ë<em>,</em> a felszólító mód köznyelvi <em>bővelkedjen</em> változatában az utolsó e ejtése zárt ë<em>.</em>
+</div><div class="behuzott">Ahol a szokott két-három toldalékos alaknál több szerepel, ott az e-k ejtésének jelölését kisebb csoportokba foglaltuk, hogy könnyen áttekinthető legyen. A szögletes zárójelen belül vesszővel elválasztott betűk mindig más-más szóalak kiírt toldalékainak ejtésére vonatkoznak, a kötőjellel kapcsolt betűk pedig ugyanannak a szóalaknak (ill. kiírt szórészletnek) egyes hangjaira.
+</div><div class="behuzott">Az ÉrtSz. nem tünteti fel a helytelen, tájnyelvi, rétegnyelvi, elavult, tehát nem köznyelvi vagy a mai köznyelvi egység szempontjából nem kívánatos kiejtést, és nem adja meg a kiejtést ott, ahol ez megegyezik a szó írott alakjának hangértékével (kivéve a már említett eseteket). Az <em>ly</em> kiejtését nem jelöltük, mert ez a köznyelvben mindig j-nek hangzik. Ezenkívül mellőztük a kiejtés feltüntetését az alábbi esetekben
+</div><div class="behuzott">1. Ahol a kiejtés eltér ugyan az írásképtől, de ez az eltérés általános, kivétel nélküli hangtani szabályba foglalható. Ilyen általános szabály az, hogy zöngétlen mássalhangzó helyett zöngést ejtünk, ha közvetlenül utána zöngés mássalhangzó következik (a<em> j, 1, ly, m, n, ny, r,</em> <em>v</em> kivételével). Tehát az átbocsát szót így ejtjük: <em>ádbocsát,</em> de ezt szótárunkban nem tüntetjük fel. (De pl. az <em>átjár</em> szóban a <em>t</em> zöngétlen marad.) Zöngétlenné hasonul viszont a zöngés mássalhangzó a rá következő zöngétlen hatására (a<em> j, 1, ly, m, n, ny, r</em> ilyenkor is megmarad zöngésnek). Tehát az adta szót így ejtjük: <em>atta,</em> de a szótárban ezt nem jelöljük. Egy másik ilyen szabály az, hogy a kettőzött mássalhangzót általában röviden ejtjük, ha rá még egy mássalhangzó következik. Az állvány szót helyesen így ejtjük: <em>álvány,</em> de ezt sem tüntetjük fel a címszó mellett.
+</div><div class="behuzott">2. Nem tüntetjük fel a mássalhangzók összeolvadását olyankor, ha a címszó utolsó hangja és a külön, kötőjellel megadott ragos alak első hangja közt jön létre. Az <em>adjon</em> igealakot helyesen így ejtjük: <em>aggyon,</em> de ez szótárunkban így szerepel: <strong>ad</strong>1 ige <em>-tam, -ott,</em> <em>-jon</em>. Ilyenkor nem tüntetjük fel a helyes <em>aggyon</em> ejtést. De feltüntetjük az ilyen összeolvadást abban a néhány esetben, amikor címszóul szerepel a ragos alak, pl. adjisten [aggyisten; j-i]; csínja-bínja [csínnyabínnya].
+</div><div class="behuzott">3. Az összetett szavak kiejtését csak akkor jelöljük, ha az összetétel valamelyik tagja nem címszó, vagy ha címszó is, de önállóan másképp ejtjük. Nem jelöljük tehát az <strong>alapművelet</strong> kiejtését, mert az e betűkkel jelölt hangok ejtése megvan a művelet címszó mellett. De megadtuk az e betűk jelölte hangok ejtését pl. az <strong>átmelegül</strong>, <strong>átokverte</strong> címszóknál, mert a <em>melegül</em> és a <em>verte</em> nem címszavunk.
+</div><div class="behuzott">Képzett szó esetében csak akkor hagytuk el a kiejtés jelölését, ha mindjárt az alapszó után következik, és értelmezése visszautal az alapszóra. Pl. a <strong>befejezés</strong> címszó ejtését külön nem jelöljük, mert a <strong>befejez</strong> közvetlenül előtte található, a főnév értelmezése pedig így kezdődik: <em>„A befejez</em> (1-5) igével kifejezett cselekvés”.
+</div><div class="behuzott">4. Általában elhagytuk az <em>e</em> betűkkel jelölt hangok ejtésének jelölését az olyan alakváltozatokban (és esetleg a toldalékos alakban megismétlődő szótövekben), melyeket ugyanúgy nyílt e-vel kell ejtenünk, mint a címszó e betűit. Pl. a csipke2 címszó mellett szereplő c<strong>sitke </strong>alakváltozat e-jének ejtését nem jelöltük.
+</div><div class="behuzott">5. Nem tünteti fel a szótár az idegen eredetű címszók x-einek ejtését, ha ksz-nek hangzanak, sem pedig a néhány címszóban előforduló w-ét, mert ezt mindig v-nek ejtjük.
+</div><div class="behuzott">6. Nem adjuk meg általában az idegen eredetű szavak <em>ch</em> betűkapcsolattal jelölt hangjának ejtését, mert ennek a helyes kiejtésére nézve a szakemberek közt még nem alakult ki egységes vélemény. Ejthetjük úgy, mint a magyar h-t vagy kettőzött h-t <em>(a pech</em> szóban úgy, mint <em>keh</em> szavunkban, <em>a peches-ben</em> úgy, mint <em>ehhez</em> szavunkban), mássalhangzó előtt pedig nyelvháttal képzett réshangként <em>(technika</em> szavunkban úgy, mint az ihlet-ben), de ejthetjük mindig nyelvháttal képzett réshangnak, tehát <em>a pech-ben</em> is olyasféleképp, mint az ihlet-ben; némely szavunkban pedig kh-nak, sőt k-nak is.
+</div><div class="behuzott">Az ÉrtSz. olykor többféle kiejtést is feltüntet, mégpedig általában olyan szavak mellett, amelyeknek két vagy esetleg többféle kiejtése egyaránt járatos, úgyhogy mindegyik ejtést helyesnek kell elismernünk. Ilyenkor az első helyen megadott ejtés a kívánatosabb, de a vagylagosan utána következő (esetleg többféle) ejtésváltozat is köznyelvi és szintén helyes.
+</div><div class="behuzott">Nem tünteti fel a szótár a rövid magánhangzós változatot az <em>-ú</em>, <em>-ű</em> képzős névszókban, az <em>-ít</em> képzős igékben, sem pedig az <em>-ul</em>, <em>-ül</em> igeképző, illetve határozórag hosszú magánhangzós változatát. Ezek jó részében ma még nagy az ejtésbeli ingadozás, de kívánatos a helyesírás szerinti kiejtés.
+</div><div class="behuzott">Az e betűvel jelölt hangok ejtésének jelölése azok számára fontos, akik különbséget tesznek a nyílt e és a zárt ë közt. A magyar nyelvközösség másik része nem ismeri ezt a különbséget, hanem minden e betűnek megfelelő hangot egyformán ejt, mégpedig általában a nyílt e-nek megfelelő hangértékben. Az ilyen – ëző kiejtéssel beszélő – emberek számára kiejtésjelölésünk [e] és [ë] betűinek nincs ejtésszabályozó jelentőségük.
+</div><div class="behuzott">A vagylagos jelölés az e betűknél mindig arra vonatkozik, hogy az ëző ejtésben is ingadozás van, illetve az ëző nyelvhasználatban sem általános a zárt ë ejtése.
+
+<br/><div class="text-center"><strong>2. A címszó elválasztásának jelölése</strong>
+</div>
+<br/>
+<div class="behuzott">A kiejtéshez hasonlóan szögletes zárójelben adtuk meg a címszó elválasztására vonatkozó jelölést, de az álló betűs kiejtésjelöléstől eltérően <em>dőlt</em> betűvel, s ha a kiejtést is jelöltük, az után, pontosvesszővel elválasztva.
+</div><div class="behuzott">Az elválasztást elsősorban olyan összetett címszók mellett jelöltük, amelyekben az összetétel tagjainak határa nem esik egybe az egyszerű szavak elválasztásakor figyelembe vett szótaghatárral. Ezzel jeleztük egyúttal azt is, hogy a címszó összetétel. Ilyenkor is csak a szótagolástól eltérő két szomszédos hang jelét adtuk meg kötőjellel elválasztva. Pl. <strong>ablaküveg </strong>[<em>k-ü</em>] azt jelenti, hogy a szó 2. és 3. szótagja között találkozik az összetétel két tagja, tehát így kell elválasztani: <em>ablak-üveg.</em> Természetesen az 1. és a 2., valamint a 3. és a 4. szótag között is elválaszthatjuk a szót, mégpedig az egyszerű szavak szótagolása szerint: <em>ab-laküveg </em>vagy <em>ablakü-veg.</em>
+</div><div class="behuzott">Összetételek származékaiban, valamint többszörös összetételekben is csak az egyszerű szótagolástól eltérő elválasztást jelöltük. Tehát pl. <strong>államrendőrség</strong> [<em>d-ő</em>] nem azt jelenti, hogy a szó az <em>államrend</em> és az <em>őrség</em> összetétele (hiszen <em>állam</em> és <em>rendőrség</em> az alkotó tagjai), hanem azt, hogy a 3. és a 4. szótag határán másképpen kell a szót elválasztani, mert megkülönböztetjük benne <em>a rendőr</em> összetétel tagjait.
+</div><div class="behuzott">Jelöltük az elválasztást ott is, ahol a betűkapcsolatot többjegyű mássalhangzónak is lehetne olvasni; pl. adásszünet [<em>s-sz</em>], hogy kettőzött sz-nek ne olvassa valaki. (Ilyenkor a kiejtést külön nem jelöltük; hangoztathatjuk a szót hasonulással hosszú sz-szel is, de jobb az elválasztásban feltüntetett s-sz külön kiejtése.) Hasonlóan: agyonnyom [<em>n-ny</em>]. Ahol azonban az ilyen betűtalálkozások esetén határozottan két külön hangot ejtünk, ott kiejtésjelölésként álló betűvel adtuk meg a két hang jelét, az elválasztás jelölését pedig – mint fölösleges ismétlést – elhagytuk, mert az a kiejtés tagolásából önként következik: <strong>anyaggyűjtés</strong> [g-gy].
+</div><div class="behuzott">Egyszerű szavakban csak az egy hangot jelölő és ritkán előforduló <em>ch,</em> valamint (mássalhangzó után) a <em>dz, dzs</em> betűkkel kapcsolatos elválasztást jelölte a szótár: anarchia [<em>r-ch</em>], brindza [<em>n-dz</em>], bandzsít <em>[n-dzs].</em>
+
+<br/><div class="text-center"><strong>3. A szófaj jelölése</strong>
+</div><BR/>
+<div class="behuzott">
+A címszó szófaji minősítésében ezek a szófaji kategóriák fordulnak elő
+
+</div><div class="behuzott">1. ige (p1. <em>ágyaz, békít, dolgozik);</em>
+</div><div class="behuzott">2. főnév (p1. <em>asztal, betű, dobás, durvaság);</em>
+</div><div class="behuzott">3. melléknév (p1. <em>alkonyi, bántó, dolgos);</em>
+</div><div class="behuzott">4. számnév (p1. <em>egy, egy-egy, második, sok);</em>
+</div><div class="behuzott">5. névmás (p1. <em>ahány, amely, az, egymás, én, enyém, ki, maga);</em>
+</div><div class="behuzott">6. igenév (csak néhány határozói igenév esetében, pl. <em>fordítva, halva, zárva);</em>
+</div><div class="behuzott">7. határozószó (pl. <em>ahogy, alássan, alatta, amott, benn, derűre-borúra, hova, így, tőle);</em>
+</div><div class="behuzott">8. igekötő (p1. <em>agyon-, be-, el-, hozzá-, ki-);</em>
+</div><div class="behuzott">9. névutó (p1. <em>alá, alatt, alól, által, belül, keresztül, szerint);</em>
+</div><div class="behuzott">10. névelő <em>(a, az; egy);</em>
+</div><div class="behuzott">11. kötőszó (p1. <em>avagy, azonban, csakhogy, hogy);</em>
+</div><div class="behuzott">12. indulatszó (érzelemkifejező, érzelemkeltő mondatszó, pl. <em>ah, ej, jaj, ó);</em>
+</div><div class="behuzott">13. egyéb mondatszó (mondat értékű szó, pl. <em>csitt, zsupsz; nos?).</em>
+
+</div><div class="behuzott">Az <em>ige</em> szófaji jelölését „ts” vagy „tn” megjegyzéssel egészítettük ki, mégpedig vagy a címszó után közvetlenül, ha valamennyi jelentés tárgyas vagy tárgyatlan (pl. <strong>átcsillan</strong> tn ige; <strong>áthurcol</strong> ts ige), vagy pedig az egyes fő részek, jelentések és jelentésárnyalatok élén, ha a jelentések részben tárgyasak, részben tárgyatlanok (pl. <strong>apaszt</strong> ige... 1. ts... 2. ts... 3. tn; <strong>árnyékol</strong> ige... 1. ts... ||a. ts... ||b. ts... ||c. ts... 3. ts... 4. tn... 5. tn...)
+</div><div class="behuzott">Ha a tárgyi vonzat megelőzi az értelmezést, akkor a „ta” jelölést mint fölöslegest rendszerint elhagytuk, pl. <strong>ad </strong>... <em>V.</em> 5. jelentésében <em>Vmit ~</em> <em>vkinek, vminek:</em> lehetővé teszi neki, hogy hozzájusson vmihez...
+</div><div class="behuzott">Ha az ige valamely tárgyas jelentésében tárgy nélkül (vagy tárgy nélkül is) használatos, ezt a megfelelő jelentés élén jelöli a szótár, pl. <strong>állít</strong> ts ige... (ritk. tárgy nélkül); <strong>árul</strong> ige …1. ts... ||a. (tárgy nélkül)... 2. ts... ||a. ts... 3. ts...
+</div><div class="behuzott">A tárgyas igealaknak tárgy nélküli használatára a megfelelő jelentés(árnyalat) élén ezzel a megjegyzéssel figyelmeztet a szótár: „ts igealak tárgy nélkül” (p1. <em>a járja, megjárja-</em>félék értelmezésében).
+</div><div class="behuzott">A <em>főnév</em> némely esetben ragos alakban szerepel címszóként. Így:
+
+</div><div class="behuzott">fn (szragos): <em>áldozta, elülte;</em>
+</div><div class="behuzott">fn (szragos, ff-ban): <em>legalja, legbelseje;</em>
+</div><div class="behuzott">fn (hat-ragos): <em>például;</em>
+</div><div class="behuzott">fn (szragos és hat-ragos): <em>jóvoltából, önszántából;</em>
+</div><div class="behuzott">fn (csak ebben a tárgyragos alakban): <em>ungot-berket.</em>
+
+</div><div class="behuzott">A főneveknek jelzői használatban jelentkező módosult (a melléknévhez közel álló) jelentésére „jelzői haszn” jelölés hívja fel a figyelmet, így különösen az anyagneveknél (pl. <em>arany, sárgaréz, vas),</em> a mértékneveknél (p1. <em>akó, centi, deci, liter),</em> valamint <em>a liba,</em> <em>ökör</em>-féle állatneveknél.
+</div><div class="behuzott">Ha a számnévnek melléknévi és főnévi jelentései egyaránt használatosak, akkor a mn-i és a fn-i kiegészítő jelölést csak az egyes jelentések csoportja előtt közöljük, pl. <strong>három</strong> szn, tőszn... I. (mn-i)... II. (fn-i).
+</div><div class="behuzott">A névmások közül a vonatkozó névmás kettős szófaji természetének, ti. vonatkozó értékének és kötőszói szerepének kiemelése végett a vonatkozó névmás címszavát vagy a többféle névmásként használatos címszó vonatkozó névmási jelentéscsoportját (ksz-ként) jelöléssel egészítettük ki. Pl. <strong>ahány</strong> névm, von szn-i (ksz-ként)...
+</div><div class="behuzott">A vonatkozó határozószónál is megtaláljuk a kötőszóként való használatra utalást, pl. az <em>ahányadszor, ahogy, amíg</em> szócikkében.
+</div><div class="behuzott">Vannak olyan szavaink, amelyek nem sorolhatók határozottan egyetlen szófaji kategóriába, de más szófaji értékük még nem fejlődött ki eléggé. Az ilyen szavak második (esetleg harmadik) szófaji értékét általában „-szerűen”-nel, bizonyos esetekben „-ként”-tel közli a szótár. Pl. <strong>annyi... </strong>III. (ragos alakok, hsz-szerűen).
+
+</div>
+<br/><div class="text-center"><strong>4. A ragok és a nyelvtani jelek, a ragozott és a jellel ellátott alakok közlése</strong>
+</div>
+<br/>
+</div><div class="behuzott">Ha a jellemző rag v. jel a címszó változatlan alakjához járul, akkor a címszót a rag előtt kötőjel helyettesíti, pl. <strong>bábu</strong> <em>-t, -ja; <strong></em>dúl </strong><em>-t, jon.</em>
+</div><div class="behuzott">Ha a szótő a címszó alakjához viszonyítva a rag v. a jel előtt megváltozik, a ragos alakot a tő változatlan részének utolsó betűjével kezdjük, s a hiányzó részre két ponttal utalunk, pl. <strong>birodalom</strong>.. <em>lmat,..</em> lma; <strong>csatorna</strong>.. <em>nát,.. nája;</em> <strong>adogat</strong> -tam, -ott,.. asson. Ezt a rövidítést azonban csak akkor alkalmazzuk, ha a címszó változatlan része háromnál több betűből áll; ha kevesebből áll, akkor az egész szót újra kiírjuk, pl. <strong>fa</strong> fn <em>fát, fája.</em>
+</div><div class="behuzott"><em>Összetett</em> szók ragos alakjait csak két esetben közöljük:
+</div><div class="behuzott">a) ha az összetétel utótagja nem címszó, pl. <strong>árrögzítés</strong> <em>-t, -ek, -e;</em>
+</div><div class="behuzott">b) ha az utótag címszó ugyan, de összetételben a szabályostól eltérően ragozzuk vagy így is ragozhatjuk, pl. <strong>bálanya</strong>.. <em>nyát,.. nyája;</em> <strong>rózsatő</strong>.. <em>tövet v. -t, -je.</em>
+</div><div class="behuzott">Az <em>ige</em> ragos alakjai közül jellemző alakként rendszeresen megadja a szótár az alanyi ragozásban a jelentő mód múlt idejének egyes 3. személyű és a felszólító mód jelen idejének egyes 3. személyű alakját, pl. <strong>ápol</strong> -t, <em>jon;</em> <strong>csépel</strong> <em>-t,</em> -jen. Közli a jelentő mód múlt idejének egyes 1. személyű alakját is, ha más tőből képezzük, mint az egyes 3. személyű alakot, pl. <strong>ad</strong> <em>-tam, -ott, jon;</em> <strong>csüng</strong> <em>-tem, -ött,</em> <em>-jön</em>; <strong>forog</strong> <em>-tam, forgott, -jon.</em>
+</div><div class="behuzott">A rendszeresen megadott ragos vagy jellel ellátott alakokon kívül más ragos alakokat is közöl a szótár,
+</div><div class="behuzott">a) ha a ragos alakoknak változataik vannak, pl. <strong>céloz</strong> <em>-tam, célzott, -zon;</em> -ni v. (ritk.) <em>célzani;</em>
+</div><div class="behuzott">h) ha a ragos vagy jellel ellátott alakok elütnek a megadottakból kikövetkeztethető, szabályos formáktól, pl. <strong>megy</strong> <em>megyek v. (táj) menek v. (táj) mék; mégy v. (rég) mégysz v. (nép) mész; (táj) megyen v. (táj, rég) mén; mennék, menjen, menni.</em> Ha valamely változat használata ritka vagy nem irodalmi (bár helytelennek nem minősíthető), a vagylagosság jelének (v.) elhagyásával kerek zárójelbe kerül.
+</div><div class="behuzott">A ragos alakok megállapításakor az ikes igék ragozásában mutatkozó ingadozást is figyelembe vettük. Az állandó ikesek esetében, vagyis azoknál az igéknél, amelyek bizonyos igemódok és idők egyes szám 3. személyében mindig fölveszik az -ik ragot <em>(aggódik, aggódnék, aggódjék), a</em> múlt idő 1. és 3. személyű alakjain kívül a felszólító mód egyes szám 3. személyének ikes és kerek zárójelbe tett iktelen alakját is megadjuk, pl. <strong>bosszankodik </strong><em>-tam, -ott, -jék (-jon). E</em> vagylagos alakok közül az ikes az irodalmi és kissé választékos, az iktelen a köznyelvi és népies.
+</div><div class="behuzott">A változó ikes, vagyis ingadozó vagy nem minden alakjukban ikes igéknek szükség szerint több ragos alakját is megadjuk.
+</div><div class="behuzott">A <em>főnév</em> jellemző ragos alakjai a szótárban a tárgyragos alak és az egyes szám 3. személyű birtokragos alak, pl. <strong>alap</strong> <em>-ot, ja;</em> <strong>emlék</strong> <em>-et, -e.</em>
+</div><div class="behuzott">Ha a többes szám <em>-k</em> jele a tárgyragos alakétól eltérő tőhöz járul, akkor a többes számú alakot is közli a szótár, pl. <strong>bátor</strong> <em>-t, -ok, -a v. -ja; <strong></em>csipesz </strong><em>-t, -ek, -e.</em> Ha a címszó csak egyes számban használatos, illetve többes számban ritka, ezt a szótár a szócikk bevezető részében külön megemlíti ilyen módon: (csak egysz-ban), (rendsz. egysz-ban), (tbsz-ban ritka) vagy úgy, hogy a többes szám jelét kerek zárójelben közli.
+</div><div class="behuzott">A <em>melléknév</em> ragos és jellel ellátott alakjai közül a szótár a módhatározó ragos alakot (<em>-n</em>, <em>-an, -en; -ul, -ül; -lag, -leg)</em> és a melléknév középfokát adja meg, pl. <strong>alacsony</strong> <em>-an, -abb;</em> <strong>csúnya</strong> <em>csúnyán v. csúnyául, csúnyább;</em> <strong>lehető</strong> <em>-leg.</em> Ha a melléknévnek nem használatos a középfoka, erre a szótár külön megjegyzéssel nem utal, csak azzal figyelmeztet rá, hogy a középfokú alakot nem közli. Így jár el akkor is, ha a módhatározó ragos alak nem használatos.
+</div><div class="behuzott">A <em>határozószók</em> nak a szócikk bevezető részében általában a középfokát közli a szótár, pl. <strong>előre</strong> <em>előrébb;</em> <strong>hamar</strong> <em>-abb v. -ább;</em> <strong>messze</strong> <em>-bb.</em> Olyankor, ha a határozószó középfoka nem használatos, csak felsőfokú alakja, a felsőfokú alakot közöljük, pl. <strong>először</strong>... ff <em>leg-;</em> <strong>utoljára</strong>... ff <em>leg~.</em>
+</div><div class="behuzott">Ha a határozószó <em>-bb</em> jelű középfoka helyett más határozószónak vagy valamely ragos alaknak <em>-bb</em> jelű középfoka használatos, a felsőfok jelét pedig az alapfokhoz tesszük, az alap-, a közép- és a felsőfokban használt alakokat egyaránt feltüntetjük, pl. <strong>alul</strong>... kf <em>alább,</em> ff <em>legalul;</em> <strong>felül</strong>... kf <em>feljebb,</em> ff <em>legfelül.</em> Így járunk el akkor is, ha a felsőfok kétféle alakban használatos, pl. <strong>belül</strong>... kf <em>beljebb,</em> ff <em>legbelül v. legbeljebb.</em> Ugyanígy akkor is, ha a középfokú vagy a felsőfokú alaknak vannak változatai, pl. <strong>előre</strong>... kf <em>előbbre v. előrébb,</em> ff <em>legelőre</em> v. <em>legelőbbre</em> v. <em>legelőrébb</em>.
+</div><div class="behuzott">Ha valamely határozószó csak közép- és felsőfokú alakban használatos, akkor a középfokú alak szerepel címszóként, s ezenkívül megadjuk a felsőfokú alakot is, pl. <strong>előbb</strong>... ff <em>leg ~.</em>
+</div><div class="behuzott">Ha a szócikk különböző szófajokhoz tartozó egységekre oszlik, a ragos és a jellel ellátott alakokat nem a szócikk bevezető részében, hanem az egyes szófajok jelentésének v. jelentéseinek élén közöljük, pl. <strong>beteg</strong>... I. mn <em>-en, -ebb;...</em> II. fn <em>-et, -e.</em>
+</div><div class="behuzott">A nyelvtani megjegyzések gyakran az egész szócikkre, máskor csak egyes jelentésekre, illetve jelentésárnyalatokra vonatkoznak.
+<br/>
+<br/><div class="text-center"><strong>5. A szótár helyesírása</strong>
+</div>
+<br/>
+</div><div class="behuzott">Helyesírás tekintetében a szótár a jelenleg érvényes akadémiai szabályzathoz igazodik <em>(A magyar helyesírás szabályai,</em> tizedik, átdolgozott és bővített kiadás, 1954., illetve ennek harmadik lenyomata, 1959). Mindaz, amire ennek a hivatalos kiadványnak akár szabályzati, akár szótári részében határozott útmutatás található, szótárunkban ennek megfelelően szerepel. Hozzá igazodunk nemcsak a címszavak írásában, hanem az értelmező szöveg és a szabad példák írásmódjában is, így az elválasztásnak, a kis és a nagy kezdőbetűk használatának, a különírásnak és az egybeírásnak, az idegen szavak írásának, a központozásnak a módjaiban stb.
+</div><div class="behuzott">Eltérést ettől a szabályzattól csak két területen mutat a szótár: a kettős alakok felvételében és az irodalmi idézetek írásmódjában.
+</div><div class="behuzott">A szabályzat szerint ma már helytelen alakokat a szótár nem címszóként, hanem mint a – helyesírási szempontból is mindig kifogástalan – címszónak alak- vagy írásváltozatait közli, s megfelelő stílusminősítéssel látja el, pl. <em>(elav), (rég), (nép), (táj).</em>
+</div><div class="behuzott">Nagyobb az eltérés az akadémiai helyesírási szabályzattól az irodalmi idézetekben. Egyrészt azért, mert az idézetekben több olyan elavult vagy tájnyelvi szóalak szerepel, amelyet nem írhat át a szótár anélkül, hogy a szövegrész kiejtésbeli hatását meg ne változtassa. Másrészt azért, mert ezek eltérő írásmódjára tájékoztató stílusminősítésekkel sem volt módunkban felhívni a figyelmet. Ha a költő a helyesírási szabályzatban is elismert költői szabadságával élve rövid i, u vagy ü helyett verstani okokból hosszú í-t, ú<em>-t</em> vagy ű-t írt, az eredeti írásmódot lehetőleg érintetlenül hagytuk. A verses idézetek helyesírási szempontból való korszerűsítésében csak addig a határig mentünk el, ameddig klasszikusaink legújabb, kritikai kiadásai is elmennek. Nem írtunk cz-t <em>c, ts</em> -et <em>cs</em> helyett, <em>lly-t az ily, oly</em> típusú szavakban, nem hagytuk meg az <em>a ki, a hogy</em> típusú névmások és határozószók régies írását, hanem egybeírva közöltük őket. Kevésbé éreztük kötve a kezünket a prózai idézetekben. Itt eredeti alakjában rendszeresen csak az általunk is számon tartott alak- és írásváltozatot hagytuk meg, minden egyebet az akadémiai szabályzatnak megfelelően átírtunk.
+<br/>
+
+<BR/><BR/>
+
+<div class="text-center">
+<strong>IV.<BR/>A STÍLUSMINŐSÍTÉS ÉS A NYELVHELYESSÉG SZEMPONTJAI</strong>
+</div>
+<BR/>
+
+</div><div class="behuzott">A stílusminősítéseket nagyobbrészt rövidítjük. Magyarázatuk megtalálható a rövidítések jegyzékében. Ott fel nem tüntetett vagy bővebb magyarázatra szoruló stílusminősítéseink a következők
+</div><div class="behuzott"><em>(elav):</em> Elavultnak az olyan szavakat minősítettük, amelyeknek a jelentését a mai felnőtt nemzedék nagy többsége nem ismeri, s magyarázat nélkül nem is érti, vagy amelyeket megértünk ugyan, de ma már egyáltalán nem használunk.
+</div><div class="behuzott"><em>(elavulóban):</em> Az így minősített szavak ma már egyre ritkábban használatosak, lassanként kiszorulnak a mindennapi élet nyelvéből.
+</div><div class="behuzott">(rég): Ezzel a minősítéssel azokat a régi vagy régies hangulatú szavakat és szójelentéseket láttuk el, amelyek a mai ember számára külön magyarázat nélkül is érthetők ugyan, de már csak az idősebb nemzedék nyelvében élnek.
+</div><div class="behuzott">A minősítések másik része arra utal, hogy valamely szó, illetve jelentés és jelentésárnyalat csupán vagy jellegzetesen valamely tudományágnak vagy szakmai területnek a nyelvében járatos. Ezeknek a szakterületeknek a nevét mindig nagy kezdőbetűvel, a rövidítésjegyzékben feltüntetett módon írva rövidítjük.
+</div><div class="behuzott">Ha valamely szót a szerkesztőség a nyelvtisztaság vagy a nyelvhelyesség, azaz származás és alakiság szempontjából helytelenít, ezt a címszó után, illetve az alakváltozat, szókapcsolat, kifejezés, szólás stb. mellé tett csillaggal (*) jelzi. A megcsillagozott idegen szó (címszó) után értelmezésként adott magyar szó arra figyelmeztet, hogy inkább ennek használatát ajánljuk a címszó helyett, pl. <strong>adresz</strong>*... Lakáscím. ||a. Levélcím, címzés.
+</div><div class="behuzott">Ha az egyébként helyteleníthető (idegen) szónak nincs pontos, hibátlan (magyar) megfelelője, vagy csak körülírással fejezhető ki, a szó mellé nem tettünk csillagot. Nem csillagoztuk meg azokat az egyébként helytelennek, fölöslegesnek vagy szükségtelennek minősíthető szókat sem, amelyeknek sajátos stiláris értékük, szak- vagy csoportnyelvi szerepük van. Ezekben az esetekben a stílusminősítés és a szak- vagy csoportnyelvi jelzés mintegy pótolja az általános nyelvhasználat szempontjából egyébként jogos helytelenítést.
+</div><div class="behuzott">A címszók ragos alakjainak felsorolásában inkább az élő nyelvhasználat esetleges vagylagosságának, változatainak feltüntetésére, mintsem a normatív megszorításra törekedtünk. A helyes használatra mégis annyiban felhívjuk a figyelmet, hogy a változatok közül a (leg)gyakoribbat s lehetőleg az alakilag helyesebbet közöljük első helyen, pl. <strong>arzén</strong> <em>ja v. je;</em> <strong>árok</strong> <em>árka v. árokja;</em> <strong>balek</strong> <em>-ot v. -et, -ja v. je;</em> <strong>bunker</strong> <em>-ek v. -ok, -je v. -ja.</em>
+</div><div class="behuzott">Az igék ragos alakjainak megadásában változatok esetén szintén nem törekszünk megkötésre, de a sorrenddel és a zárójellel adunk bizonyos normatív irányítást is, pl. <strong>ásítozik</strong> <em>-nék, -na,</em> <strong>árulkodik</strong> <em>-jék (-jon).</em>
+</div><div class="behuzott">Nem ragaszkodtunk mereven az ikes igék ún. szabályos ragozásához sem. Figyelembe véve az ikes ragozás lazulását és keveredését, az élő nyelvhasználat vegyes ragozású alakjaival is bátran éltünk.
+</div><div class="behuzott">A szócikk végén értelmezés nélkül felsorolt összetételek és származékok közt általában csak a helyes szóalkotásokat tüntetjük fel; a szabálytalan vagy a kevésbé szabályos szóalakokat csak akkor vettak fel, ha gyakoriak és fontosak.
+</div>
+
+<BR/><BR/>
+<div class="text-center">
+<strong>V.<BR/>AZ ÉRTELMEZÉS</strong>
+</div>
+
+<BR/>
+
+</div><div class="behuzott">Az értelmezéseket úgy szövegeztük meg, hogy a) a jelentéstani-logikai, valamint b) a szintaktikai követelményeknek egyaránt megfeleljenek.
+</div><div class="behuzott"><em>Jelentéstani-logikai</em> szempontból az a legfőbb követelmény, hogy az értelmezés az értelmezett szóval tartalmilag azonos, egyenértékű legyen.
+</div><div class="behuzott"><em>Szintaktikai</em> szempontból pedig fontos, hogy az értelmezés szövegét lehetőleg mindazokba a mondatokba be lehessen helyettesíteni, amelyekbe az értelmezett szó beilleszthető.
+</div><div class="behuzott">A <em>szótári értelmezés</em> természetét a szótár sajátos jellege szabja meg. A szótár ugyanis azt a fogalmat, tárgyat stb., amelyet az értelmezendő szó és szókapcsolat jelöl, általában többé-kevésbé ismertnek tekinti, ezért beéri a jelölt dolog fölismeréséhez elengedhetetlen, legfontosabb meghatározó jegyek közlésével. A szótári értelmezés ennek megfelelően viszonylag rövid, tömör, kevéssé részletező.
+</div><div class="behuzott">Az <em>ismerettári</em> (enciklopédikus) <em>értelmezés</em> természetét az ismerettár sajátos céljai határozzák meg. Az enciklopédia (lexikon) – jellegének és céljának megfelelően – többnyire ismeretlennek vagy nem eléggé ismertnek föltételezett dolgokat, fogalmakat ismertet, ezért a saját szempontjából lényegesnek, megismertetésre érdemesnek tartott jegyek minél teljesebb fölsorolására törekszik.
+</div><div class="behuzott">A szótár, a mondott okokból, nem törekedhet enciklopédikus értelmezésekre, sőt az ilyen jellegű értelmezéseket kerülnie kell.
+</div><div class="behuzott">Az értelmezés részletkérdéseivel itt nem foglalkozunk, csupán az alábbiakat jegyezzük meg.
+</div><div class="behuzott">Ha a fn és mn, illetve mn és fn szófajú címszónak csak egy jelentése van, az egyszerűség kedvéért ezt összevontan értelmezzük, pl. <strong>dedós</strong> mn és fn... Óvodába járó (gyermek).
+</div><div class="behuzott">Összevont értelmezés található az olyan főnevek szócikkeiben is, amelyeknek csak egy jelentésük van, de az főnévként is, melléknévi értelmű jelzőként is használatos, pl. <strong>alkoholista</strong> fn és <em>(ritk)</em> mn Olyan (személy), akinek kóros szenvedélye a szeszes italok rendszeres és mértéktelen fogyasztása; iszákos.
+</div><div class="behuzott">Az összevont értelmezés szövegében, mint a fenti példák is mutatják, kerek zárójelbe kerül a vagylagosan értendő szó vagy szókapcsolat.
+</div><div class="behuzott">Behelyettesíthető szerkezettel nehézség nélkül csak olyan szavakat lehet értelmezni, amelyeknek megragadható jelentéstartalmuk van, tehát tulajdonképpen csak a fogalomszókat. Nem vagy csak kevéssé lehetséges a formaszók egy részének ilyen szerkezettel való értelmezése, minthogy ezeknek általában nincs szinonímával pótolható vagy körülírással meghatározható jelentésük. Éppen ezért, szorosabb értelemben vett meghatározás helyett az ilyen szóknak rendszerint csak nyelvtani használatát, a beszédhelyzetben betöltött szerepét elemeztük.
+</div><div class="behuzott">A behelyettesíthetőség érdekében a körülíró szerkezetnek szófaji tekintetben is lehetőleg egyeznie kell az értelmezett (cím)szóval vagy szókapcsolattal. Ezért névszót névszóval, igét igével, határozószót megfelelően körülírt határozóval, illetőleg – a lehetőség szerint – ilyen értékű szókapcsolattal értelmeztünk. A melléknevek értelmezésében ezért oly gyakorí az 'olyan &lt;személy, dolog stb.&gt;, aki, amely' szerkezet.
+</div><div class="behuzott">Az értelmezés szövegének csúcsos zárójelbe foglalt része szorosan véve nem tartozik a behelyettesíthető meghatározáshoz, de nélküle mégis hiányos volna a szó jelentésére és használatára vonatkozó magyarázat.
+</div><div class="behuzott">Csúcsos zárójelbe kerül:
+</div><div class="behuzott">1. Az <em>ige</em> értelmezésében a) az igével kifejezett cselekvésnek az alanya, pl. <strong>cserfel</strong> '&lt;Rendsz. nő&gt; gyors beszéddel perel, nyelvel'; b) a tárgy, pl. stoppol '&lt;Időt&gt; (stopper)órával mér'; c) a határozó, pl. <strong>liheg</strong>1. &lt;Szervezetének, kül. légzőszerveinek erős igénybevétele miatt...&gt; a rendesnél szaporábban... lélegzik.'
+</div><div class="behuzott">2. A <em>főnév</em> értelmezésében az illető jelentésbe nem tartozó ragos vagy névutós határozó, pl. családfő' &lt;Nevelőintézetben, diákotthonban&gt; egy-egy kisebb csoportra... felügyelő... idősebb tanuló'.
+</div><div class="behuzott">3. A <em>me1léknév</em> értelmezésében azoknak a főneveknek összefoglaló megnevezése, amelyekhez az illető melléknév jelzőként társulhat, pl. cselekvő '1. ||a. Olyan &lt;személy&gt;, aki alakítóan, irányítóan bele szokott avatkozni az események... menetébe. ||b. Olyan &lt;magatartás&gt;, amely ilyen személyre jellemző. 2. <em>(Nyelvt)</em> Olyan &lt;ige v. mondat&gt;, amely...'
+</div><div class="behuzott">Máskor a csúcsos zárójel a címszó használatát körülírva, be nem helyettesíthető módon világítja meg, kivált olyan szavak és szókapcsolatok értelmezésében, amelyeknek a jelentését sem körülírással, sem szinonímával nem lehet pontosan megadni. Ilyenek a szófajok közül a különféle formaszók, az indulatszók, a szitokszók stb. Pl. sicc '&lt;Macska elkergetésére haszn. szó.&gt;' – gyönyörűséges '||a. &lt;Rosszalló értelmű szó mellett a rosszallás fokozására.&gt; No, te ~ mákvirág!'
+</div><div class="behuzott">Gyakori a csúcsos zárójel a szók különféle használati módjainak, a jelentések korlátozásának, megszorításának stb. feltüntetésére, pl. &lt;vminek a megnevezéseként&gt;, &lt;festőművészek szóhasználatában&gt;, &lt;csak állandósult szókapcsolatokban&gt;, &lt;csak így: &gt;, &lt;fokozó értelemben&gt;.
+</div>
+
+
+<BR/><BR/>
+<div class="text-center">
+<strong>VI.<BR/>A SZÓHASZNÁLATOT SZEMLÉLTETŐ ANYAG</strong>
+</div>
+<BR/>
+
+
+<div class="behuzott">Az ÉrtSz. szócikkeinek nagyobbára a szójelentés értelmezése után következő – minden esetben dőlt betűvel szedett – része a címszavakkal alkotható kapcsolatokra ad példákat, tehát a szónak az élő beszédben, konkrét szövegösszefüggésben való használatát szemlélteti.
+</div><div class="behuzott">Az ÉrtSz. – a körülményektől függően – a szemléltetésnek alábbi módjaival él:
+</div><div class="behuzott">1. megadja a szójelentésre jellemző vonzatot; 2, szabad példákat, azaz a szótár szerkesztőitől alkotott szókapcsolatokat és példamondatokat közöl; 3. bemutatja, hogy mely állandó szókapcsolatokban szokott előfordulni a szó, vagyis frazeológiát ad; 4. írói, költői idézetekkel világítja meg a szók jelentését és mondatbeli használatát.
+</div><div class="behuzott">1. A <em>vonzatok</em> feltüntetése azt szemlélteti, hogy valamely ige vagy melléknév milyen nyelvtani szerkezetben szokott előfordulni, milyen raggal (ragokkal) vagy milyen névutóval (névutókkal) alakult határozó szokott hozzátartozni.
+</div><div class="behuzott">A vonzatot vagy kiemelve, tehát a megfelelő jelentés, illetve jelentésárnyalat élén közöljük, és ilyenkor az értelmezés a vonzat után következik, vagy pedig közvetlenül az értelmező szöveg után adjuk meg mint az első olyan szókapcsolat-példát, amelynek mintájára a címszóval számos más, azonos nyelvtani szerkezetű szókapcsolat alkotható.
+</div><div class="behuzott">A vonzatot elsősorban akkor emeljük ki, ha valamely ige vagy melléknév valamely jelentésben csak bizonyos raggal vagy névutóval szokott állni. Így pl. az él ige csakis <em>-val, -vel</em> ragos határozóval együtt járatos 'felhasznál, igénybe vesz, alkalmaz vmit' jelentésben, és csakis az <em>után</em> névutóval alakult határozóval jelenti a népies vagy régies stílusban azt, hogy 'vkinek a jóvoltából, vmely munkából származik vkinek a keresete' (p1. <em>a szülei után él; két keze munkája után él).</em>
+</div><div class="behuzott">Máskor a vonzat nem különösebben jellemző ugyan az illető jelentésre, mégis a kiemelt vonzatot értelmezzük, ha az illető jelentést vagy jelentésárnyalatot megvilágító szövegben olyan igét vagy melléknevet használunk, amelynek a vonzata nem egyezik meg az értelmezendő igének vagy melléknévnek a vonzatával, és ezért az értelmezést nem lehetne behelyettesíteni abba a nyelvtani szerkezetbe, amelyben a címszó járatos. Pl. <em>bokrosodik vmi:</em> vmely területet bokrok kezdenek benőni; <em>behajt vmit:</em> vmely hajlítható anyagnak (papírnak, szövetnek) kisebb részét, sarkát, szélét egyenes vonalban megtörve a nagyobbik részére ráfekteti.
+</div><div class="behuzott">Ha magából az értelmező szövegből is félreérthetetlenül kiderül, hogy mi a címszó vonzata, ezt külön nem adjuk meg. Az ácsingózik ige vonzata pl. <em>.-ik vmire, vki v. vmi után.</em> Minthogy azonban ez a vonzat már magában az értelmező szövegben is benne van ('áhítozik, sóvárog, vágyódik vmire, vki v. vmi után'), külön kiemelve nem tüntetjük fel.
+</div><div class="behuzott">2. A <em>szabad szókapcsolatok</em> száma a nyelvben szinte végtelen. A szótár csak azokat közli – mégpedig általában külön értelmezés nélkül – amelyek a leggyakoribbak és a szó használatára a legjellemzőbbek.
+</div><div class="behuzott">A szótárnak a szabad szókapcsolatokkal rokon jellegű nyelvi szemléltető eszköze a példamondat.
+</div><div class="behuzott">Minthogy a szótár példamondatai is kizárólag a nyelvi közlés céljainak szolgálatában állnak, gyakran nem is befejezett, kerek mondatok, hanem inkább csak olyan megkezdett mondatok vagy mondattöredékek, amelyekből azért kitűnik, hogy milyen mondattípusban, milyen sajátos mondatszerkezetben gyakori a címszó (pl. az <strong>abbeli</strong> szócikkében: <em>Kifejezést ad ~ reményének, hogy...;</em> a <strong>beteg</strong> szócikkében: ~<em>e annak a gondolatnak, hagy...).</em> Ha viszont a címszónak valamely kérdésre vagy kérésre adandó válaszban van sajátos jelentése, illetőleg ha a címszó magában is válaszként szokott szerepelni vagy általában párbeszédben mondat értékű szóként használatos, akkor azt az egész párbeszéd-töredéket idézzük, amelyből kiderül a címszó sajátos használata, jelentése. Ilyenkor a párbeszédnek azt a részét, amelyben a címszó nem fordul elő, szögletes zárójelbe tesszük. Pl. a <strong>csak</strong> határozószó szócikkében <em>[Miért tetted ezt?] </em>– ~<em>.</em>
+</div><div class="behuzott">3. Az <em>állandósult szókapcsolatok</em> annyira összeforrtak, új jelentést hordozó nyelvi egységgé, lexémává váltak, hogy már külön értelmezésre szorulnak.
+</div><div class="behuzott">Ugyanazt az állandósult szókapcsolatot rendszerint több címszó alatt is felvettük, de helykímélés céljából általában csak egyetlen szavuk alatt adtuk meg az értelmezésüket, a többi szavuk alatt pedig csupán nyíllal (→) utaltunk arra a címszóra, amelynek cikkében a kapcsolat értelmezése megtalálható.
+</div><div class="behuzott">A szótárba felvett állandósult szókapcsolatoknak öt típusát különböztetjük meg
+</div><div class="behuzott">a) az <em>értelmezett szókapcsolatok</em> jellegére nem utalunk röviditéssel;
+</div><div class="behuzott"><em>b) (szój)</em> jelöléssel <em>szójárásnak</em> nevezett állandósult kapcsolatokat közlünk;
+</div><div class="behuzott">c) <strong>Szh</strong>: jelöléssel számos <em>szóláshasonlatot</em> részint magában a szócikkben, részint a szócikk kiegészítő részében adunk meg;
+</div><div class="behuzott">d) <strong>Sz: </strong>jelöléssel a megfelelő szócikkek kiegészítő részében <em>szólások</em> (szólásmódok) találhatók;
+</div><div class="behuzott">e) végül némely szócikk végén <strong>K</strong>: jelöléssel <em>közmondásokat</em> is közlünk.
+</div><div class="behuzott">Az efféle szókapcsolatok egyes típusairól a következőket jegyezzük meg
+</div><div class="behuzott">a) Az <em>értelmezésre szoruló szókapcsolatokat</em> azalatt a szavuk alatt értelmezzük, amely az új, a sajátos jelentést hordozza. <em>A tengeri csillag</em> állatnév értelmezése pl. a csillag címszó alatt található, mert <em>a tengeri</em> melléknév számos más kapcsolatban is előfordul abban a jelentésben, hogy 'tengerben vagy tengeren élő &lt;növény, állat&gt;'.
+</div><div class="behuzott">A szókapcsolatok értelmezésében azt a szót, amely magában az értelmezett szókapcsolatban is előfordul, csupán kezdőbetűjével rövidítve írjuk ki, ha e szó mind a kifejezésben, mind pedig az értelmezésben ragtalan. Pl. a <strong>besüt</strong> ige 2. jelentésének értelmezése után ~ <em>a nap v. a hold (vmin) vhova:</em> a n. v. a h. fénysugarai (vmely nyíláson át) behatolnak vminek a belsejébe.
+</div><div class="behuzott">b) A szóhasználatot szemléltető állandósult szókapcsolatok egy részét <em>szójárásnak</em> minősítve <em>(szój)</em> jelzéssel közöljük. Olyan, rendszerint mondat értékű kifejezések ezek, amelyeket gyakran minden különösebb közlési vagy érzelemkifejező szándék nélkül, pusztán csak szokásból, esetleg udvariasságból vagy olyan közhelyként szoktunk mondani, amelynek a tulajdonképpeni tartalmát nem vesszük egészen komolyan. Pl. <em>bő szüretet, nagy csizmát; bort, búzát, békességet (,szép asszony feleséget); biztos, ami biztos; szépre száll a füst; Sándor, József, Benedek zsákkal hoznak meleget.</em>
+</div><div class="behuzott">A szójárásnak minősített kifejezéseket az értelmezett szókapcsolathoz hasonlóan közöljük, de csak akkor értelmezzük, ha magyarázatra szorulnak.
+</div><div class="behuzott">c) A szótárban <strong>Szh</strong>: jelzéssel közölt <em>szóláshasonlatok</em> mind formájukat, mind pedig jelentésüket tekintve élesen elkülönülnek a frazeológiai kapcsolatok más típusaiba sorolható kifejezésektől. Nyelvtani alkatukat tekintve olyan kéttagú, állandósult szókapcsolatok ezek, amelyeknek első tagja ige vagy melléknév, ritkábban igei vagy melléknévi értékű kifejezés, második tagja pedig rendszerint <em>mint</em> kötőszóval bevezetett határozói, ritkábban <em>hogy, mintha</em> stb. kötőszóval kezdődő módhatározói vagy következményes mellékmondat, <em>pl. fehér, mint az alabástrom; úgy veszik, mintha ingyen adnák.</em>
+</div><div class="behuzott">d) <em>Szólásnak</em> (szólásmódnak) az olyan közkeletű, rendszerint elhomályosult eredetű állandósult szókapcsolatokat tekintjük, amelyekben a kifejezés egészének a jelentése vagy meg sem érthető a szólást alkotó szavak külön-külön vett jelentéséből (pl. <em>bakot lő; érti a csíziót; csütörtököt mond),</em> vagy pedig, ha a kifejezés eredeti s átvitt jelentése közti viszony némi gondolkozással érthetővé válik is, a beszélő általában nem gondol erre az összefüggésre <em>(p1. beadja a derekát; tengelyt akaszt vkivel).</em>
+</div><div class="behuzott">A szólásokat vezérszavuk szócikkének kiegészítő részében értelmezzük. Vezérszónak általában a szólás főnévi elemét tekintjük.
+</div><div class="behuzott">Az <strong>Sz</strong>: jel után először mindig az értelmezett szólást, illetőleg a vezérszó névutójának vagy ragjának betűrendjébe szedett, értelmezett szólásokat közöljük, és csak ezután soroljuk fel a más szócikkben értelmezett szólásokra utaló szavakat. Pl. a <strong>bor</strong> szócikkében: <strong>Sz: </strong><em>(táj) ~ral mosdik, kolbásszal törülközik:</em> olyan jómódban él, hogy azt se tudja, mit kezdjen a sok enni-, innivalójával; ld. még <em>ágy, csizma, víz.</em>
+</div><div class="behuzott">e) A <em>közmondásokat</em> általában csak egy helyen, vezérszavuk szócikkének kiegészítő részében vesszük fel, és ott is értelmezzük őket. Vezérszavuknak általában az első főnévi elemüket tekintjük. Ez a közmondás pl.: <em>Ki mint veti ágyát, úgy alussza álmát –</em> az ágy szócikkében, ez pedig: <em>Nézd meg az anyját, vedd el a lányát –</em> az anya szócikkében található. Ettől az elvtől csak akkor térünk el, ha vagy nincs a közmondást alkotó szavak között főnév, vagy pedig ha a közmondás első főnévi eleme nagyon is általános értelmű és a közmondásra egyáltalán nem jellemző szó. Ezt a közmondást p1.: <em>Szegény ember vízzel főz,</em> a <strong>szegény</strong> melléknév szócikkében helyeztük el.
+</div><div class="behuzott">4. A szótár rendszeresen 76 szerző műveiből közöl <em>idézeteket</em>. A szerzők kevés kivétellel (Kossuth, Szalay László, Csengery Antal, Péterfy Jenő stb.) nemzeti szépirodalmunk képviselői. Legtöbbet XIX. századi klasszikusaink (Katona, Vörösmarty, Petőfi, Arany, Jókai, Mikszáth stb.) műveiből s a XX. század legnagyobb magyar költőitől és íróitól (Ady, Tóth Árpád, József Attila, Móricz Zsigmond stb.) idézünk. Hogy hozzájuk viszonyítva kisebb jelentőségű írók és költők műveiből is rendszeresen közlünk idézeteket, ennek egyrészt az az oka, hogy több író nyelvhasználatát tekintetbe véve egyetemesebb képet adhatunk a magyar irodalmi nyelvről, másrészt pedig az, hogy a legnagyobb íróink alkotásaiból gyűjtött cédulaanyagban némely szójelentés szemléltetésére nem találtunk megfelelő idézetet. Ma is élő íróinktól <em>–</em> minthogy életművük nem tekinthető lezártnak <em>–</em> nem közöl idézetet a szótár.
+</div><div class="behuzott">Kivételesen felhasználunk idegen nyelvből fordított műveket is, de csak akkor, ha az idegen szerző kiemelkedő jelentőségű szépíró volt, és ha a fordító is nyelvünk művésze, a magyar műfordítás-irodalom jelentős egyénisége. Idegen nyelvű, nem szépirodalmi művet fordításban nem idézünk, és nem használjuk fel névtelen vagy nem költő fordítók tolmácsolását sem.
+</div><div class="behuzott">Olykor meg kellett rövidítenünk az idézetet, máskor ki kellett egészítenünk, vagy pedig bizonyos magyarázatot kellett hozzáfűznünk, illetőleg bizonyos jelzéseket kellett benne alkalmaznunk.
+</div><div class="behuzott">Az idézetet megrövidítettük, ha a címszót tartalmazó szövegrészlet olyan vonatkozást is tartalmaz, amely nem szükséges vagy nem tartozik a címszó szemléltetéséhez.
+</div><div class="behuzott">Azt, hogy közlésünkben az eredeti szöveg egy vagy több szava <em>–</em> kivételesen esetleg egy vagy több mondata is <em>–</em> kimaradt, három ponttal jelöljük. Mivel előfordul, hogy az idézett szövegben is három ponttal jelölte a szerző valamely gondolat félbeszakítását, az eredeti három pont helyébe négy pontot (.... ) teszünk. (Pl. <em>Béke födje hamvát.... fátyol az emlékét.</em> Az eredeti szövegben: <em>Béke födje hamvát... fátyol az emlékét.)</em>
+</div><div class="behuzott">Az írói idézeteknek betoldással való kiegészítése, még ha a szöveg érthetővé tételét szolgálja is, némi önkényes beavatkozást jelent az író munkájába. Éppen ezért akkor, amikor elkerülhető, nem élünk vele. Ha bizonyos kiegészítésre mégis szükség van, a szótár szerkesztőitől származó szöveg szögletes zárójelbe kerül, és az idézettől eltérően nem dőlt szedésű, pl.: <em>Az öregasszony piszmogva aggatta</em> [a karácsonyfára] <em>a fényes limlomot.</em>
+</div><div class="behuzott">Rövid, egy-két szavas magyarázatokat is csak a legszükségesebb esetben toldunk be az idézetbe. Erre rendszerint akkor kerül sor, ha az idézetben olyan szó fordul elő, amely a szótárban sem mint értelmezett címszó, sem mint szócikk végén közölt összetétel vagy származék nem szerepel. Ezt a népdalsort például: „Bérugá gyontáros ládáját” <em>–</em> minthogy sem <em>a gyontáros,</em> sem alapszava nem címszavunk <em>–</em>, így közli a szótár: <em>Bérugá gyontáros</em> [= tarkára festett] <em>ládáját.</em>
+</div><div class="behuzott">A verses szövegekből vett idézeteket helykímélés végett folyamatosan írva, nem pedig verssorokra tagolva közöljük. A verssorok nagy kezdőbetűje a legtöbb esetben amúgyis eligazítja a szótár használóját abban a tekintetben, hogy hol kezdődik a vers egy-egy sora. (Lásd például ezt a Kisfaludy Sándor Himfyjéből vett idézetet: <em>Csak a baglyok huhogása, És a hollók károgása, Elegyedik jajomba.)</em> Ha azonban a költő a verssorok elején nem használ nagy kezdőbetűt, vagy ha tulajdonnév fordul elő az idézetben, és így kétely támadhat a verssorok kezdetét illetően, akkor az idézett versszövegben a sorhatárokat vékony függőleges vonallal, virgulával (|) jelöljük.
+</div><div class="behuzott">Az idézetek után a szerző neve vagy a szerző nevének rövidített formája következik. Két név vagy rövidítése műfordításból vett idézetet jelöl. Az első tag a magyar műfordítónak, a második tag a magyarul tolmácsolt idegen költőnek a neve, illetőleg nevének rövidítése.
+
+</div>
+
+<BR/><BR/>
+<div class="text-center">
+<strong>VII.<BR/>AZ UTALÁSOK</strong>
+</div>
+<BR/>
+
+
+</div><div class="behuzott">Az ÉrtSz.-nak egyik alapelve, hogy helymegtakarítás végett mindent lehetőleg csak egyszer, a maga legtermészetesebb helyén közöl, s ha az egyszer már elmondottat egy másik címszó kapcsán újra el kellene mondani, akkor a közlés ismétlése helyett csupán ennek lelőhelyére utal.
+</div><div class="behuzott">A szócikkekben az alábbi fajta utalások találhatók
+</div><div class="behuzott">1. Külön utaló szócikkbe kerül
+</div><div class="behuzott">a) minden olyan alakváltozat, amely az ábécérendben nem tőszomszédja a címszóul megtett főalaknak; az utalás itt egyetlenegy szó: az, amelyiknek szócikkében az illető alakváltozat értelmezése is található; p1.: <strong>kalán</strong> ..... Kanál;
+</div><div class="behuzott">b) minden olyan írásváltozat, amely nem ugyanazzal a betűvel kezdődik, mint a címszóul megtett, helyesírási szempontból is kifogástalan főalak; az utalás formája Ld: és kisbetűvel kezdve az a címszó, amelynek szócikkében az írásváltozat található; pl. <strong>chablon.... </strong>Ld: sablon; a c-vel és a ph-val kezdődő latin eredetű szavak nagyobb részét nem tettük meg külön utalócikknek, ennél a két betűnél külön lapalji megjegyzés figyelmeztet, hogy az itt nem található idegen szavakat <em>k,</em> illetve f alatt kell keresni;
+</div><div class="behuzott">c) minden olyan ragos alak, amelynek toldaléktalan alakja nehezen ismerhető fel; az utalás formája azonos a b) alattival; pl. engem ..... Ld. én;
+</div><div class="behuzott">d) azoknak, a hangoknak és betűknek neve, amelyek az írott alaktól eltérően kezdődnek; az utalás formája azonos a b) alattival; pl. <strong>emm</strong> ..... Ld: m.
+</div><div class="behuzott">2. Az értelmezés szövegében kerek zárójelbe tett számmal és betűvel utalunk a több jelentésű szónak arra a jelentésére vagy jelentésárnyalatára, amelyben éppen használtuk. Ha az a szócikk, amelyre hivatkozunk, jelentéscsoportokra is oszlik, a jelentéscsoport római számát is megadjuk. Ha tehát az értelmezés valamelyik szavát pl. ez a jelzés követi: (II. 3a), ez arra utal, hogy az a szó ezúttal a maga szócikkének második jelentéscsoportjában a harmadik jelentés a. jelzésű árnyalatában meghatározott értelemben fordul elő. Ha az értelmezés ilyen külön utalás nélkül is félreérthetetlenül világos, a zárójeles hivatkozást mellőzzük.
+</div><div class="behuzott">3. Félreértések elkerülése végett az értelmezés szövegében is kitesszük olykor az igazi homonímák zárójel nélküli, valamint az álhomonímák zárójeles index-számát.
+</div><div class="behuzott">4. Az egyes jelentések után példaként felsorolt szókapcsolatokban a vezérszóra mutató kis nyíl (→) azt jelzi, hogy a szókapcsolat értelmezését melyik szócikkben kell keresni.
+</div><div class="behuzott">5. Az értelmezés után Vö: jelzéssel arra a szócikkre utalunk, amely az éppen tárgyalt jelentéssel bizonyos kapcsolatban levő megállapításokat tartalmaz, s amelyet éppen ezért ajánlatos emezzel egybevetni.
+</div><div class="behuzott">6. A szócikk végén <strong>Szh:, </strong>illetve <strong>Sz: </strong>tagolójel után „ld” vagy „ld még” jelzéssel soroljuk fel azoknak a szóláshasonlatoknak, illetve szólásoknak a vezérszavát, amelyekben a tárgyalt címszó is előkerül, értelmezésük azonban a maguk természetesebb helyén, a megadott vezérszó szócikkének végén található.
+</div><div class="behuzott">7. Az ige szócikkének végén <strong>Ik</strong>: tagolójel után ábécérendben soroljuk fel a címszó leghasználatosabb igekötős kapcsolatait. Közülük azokat, amelyek a szótárban címszavak is, vagyis amelyekre nézve a maguk ábécérendi helyén részletes felvilágosítást talál az olvasó, dőlt, a többit álló betűvel szedettük.
+</div><div class="behuzott">8. A szócikk végén <strong>Ö</strong>:... 2. jelzéssel az ÉrtSz.-nak azokat az összetett címszavait soroljuk fel, amelyekben az éppen tárgyalt címszó mint utótag fordul elő. Azokra a szótári címszavakra, amelyekben a tárgyalt címszó előtag, nem utalunk, mert ezek szócikkei mind az előtag szócikkének közelében találhatók. <strong>Ö</strong>: 1. jelzéssel azokat az értelmezést alig igénylő összetételeket soroltuk fel, amelyekben a címszó előtag, maguk az összetételek azonban nem címszavai a szótárnak. Ha csak egyféle összetételt sorolunk fel, puszta <strong>Ö</strong>: jelzés vezeti be őket.
+</div><div class="behuzott">A fentiekben csupán a leglényegesebbre szorítkozva tájékoztattuk az Értelmező Szótár használóit a szükséges tudnivalókról.
+</div><div class="behuzott">A munkánk során fölvetődött és szócikkeinkben érvényesített elméleti kérdésekről, a szerkesztésben követett elveinkről, ezek alapján kialakított gyakorlati módszereinkről, továbbá a szótár létrejöttének tízéves történetéről külön kötetben adunk bővebb tájékoztatást.
+</div>
+
+<BR/>
+<HR/>
+<BR/>
+<div class="text-center">
+A TELJESEBB MAGYAR ÁBÉCÉ NYOMTATOTT NAGY- ÉS KISBETŰI
+</div>
+
+<BR/>Aa Áá Bb Cc Cs cs Dd Dz dz Dzs dzs Ee Éé Ff Gg Gygy Hh Ii Íí Jj Kk Ll Lyly Mm Nn Nyny Oo Óó Öö Őő Pp Qq Rr Ss Szsz Tt Tyty Uu Úú Üü Űű Vv Ww Xx Yy Zz Zszs
+<BR/>
+<BR/>
+
+
+
+
+
+
+<!-- -->
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript"> var gemius_identifier = "nA5K38S_R6j5UvHZZUaBxcUFjzOBaptU.eLGPQLqtjX.r7"; function gemius_pending(i) { window[i] = window[i] || function() {var x = window[i+"_pdata"] = window[i+"_pdata"] || []; x[x.length]=arguments;};};gemius_pending("gemius_hit"); gemius_pending("gemius_event"); gemius_pending("pp_gemius_hit"); gemius_pending("pp_gemius_event");(function(d,t) {try {var gt=d.createElement(t),s=d.getElementsByTagName(t)[0],l="http"+((location.protocol=="https:")?"s":""); gt.setAttribute("async","async");gt.setAttribute("defer","defer"); gt.src=l+"://gthu.hit.gemius.pl/gemius.js"; s.parentNode.insertBefore(gt,s);} catch (e) {}})(document,"script"); </script> </body>
+</html>

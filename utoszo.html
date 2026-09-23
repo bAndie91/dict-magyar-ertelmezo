@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> A magyar nyelv értelmező szótára</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+	<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
+	<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
+	<!--script src="js/less-1.3.3.min.js"></script-->
+	<!--append ‘#!watch’ to the browser URL, then refresh the page. -->
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="img/favicon.png">
+  
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+<body>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand"
+					 href="index.php" title="Vissza a címlapra...">A magyar nyelv értelmező szótára</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<!--
+						<li>
+							<a href="#">Előszó</a>
+						</li>
+						-->
+						
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tájékoztató<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="eloszo.php">Előszó</a>
+								</li>
+								<li>
+									<a href="utoszo.php">Utószó</a>
+								</li>
+							</ul>								
+								
+						</li>
+<!--						
+						<li>
+							<a href="#">Utószó</a>
+						</li>
+-->											<li>
+							<a href="szotar.php">Címszó lista</a>
+						</li>
+	
+					</ul>
+
+					<form class="navbar-form navbar-left" role="search" action="kereses.php">
+						<div class="form-group">
+<input class='form-control' type='text' placeholder='Keresés a szövegben' name='kereses' value=''>                                                
+						</div> 
+						<div class="form-group"> 
+						
+                                                <label class='checkbox' style='font-weight:normal; color:#666'> &nbsp; Csak címszóban:&nbsp;
+                                                <input type="checkbox" class="" name='csakcimben' 
+                                                    >
+                                                </label>
+                                                </div>
+						&nbsp; <button type="submit" class="btn	btn-default"><span class="glyphicon glyphicon-search"></span></button>
+					</form>
+					
+				</div>
+			</nav>
+				<div  class="tipp"><strong>Súgó:</strong> A kereső alapesetben a szótár teljes szövegében keres. A találatok húszasával lapozhatók a nyíl ikonokkal előre és hátra. A "kuty" kezdetű szócikkekhez pipálja ki a <em>Csak címszóban</em> opciót és ezt írja a keresőmezőbe (csillaggal a végén): <strong>kuty*</strong> (és nyomja meg az Enter-t vagy kattintson a nagyító ikonra). A más szócikkekre való hivatkozásokon (<strong>v. ö.</strong> és <strong>l.</strong>) nincsenek linkek, ezért a hivatkozott címszóra rá kell keresni.</div>
+<div class="row clearfix">
+<div class="col-md-12 column">
+
+<BR/> 
+<div class="text-center">
+<B>HELYESBÍTÉSEK</B>
+<BR/><BR/>
+[<em>Az alább következő szöveg az eredeti kiadásban a VII. kötet végén közölt helyesbítések bevezetője. <BR/> A javítandókat a MEK-ben található elektronikus kiadásban a megfelelő helyen egy szürke hátterű betoldással jeleztük.</em>]
+</div>
+<BR/>
+<div class="behuzott">Az itt következő lapokon a Magyar Nyelv Értelmező Szótárának néhány téves adatát helyesbítjük és kisebb hiányosságát pótoljuk.</div>
+<div class="behuzott">Mindenekelőtt azokat a súlyosabb értelemzavaró sajtóhibákat javítjuk itt ki, amelyeket az olvasó esetleg nem venne észre. Helyrehozunk néhány tördelési hibát, kiigazítunk egypár szerkesztési tévedést, pótolunk az értelmezés szövegéből vagy egyes példákból itt-ott hiányzó szavakat vagy sorokat, egy-két esetben hiányzó szójelentéseket is.</div>
+<div class="behuzott">Nem javítjuk ki azonban azokat a kisebb jelentőségű sajtóhibákat (pl. hiányzó, a nyomás során kihullott vagy elcsúszott vagy felfordítva szedett betűket és írásjeleket, lemaradt ékezeteket stb.), amelyeket minden figyelmes olvasó magától is könnyen felismer. Nem változtattunk a zárójeles utalószámok közé becsúszott hibákon sem. Ha azonban az ÉrtSz.-ból új kiadás készül, ezeket a kisebb hibákat kijavítjuk magában a szótár szövegében.</div>
+<div class="behuzott">A helyesbítések a címszavak ábécérendjében következnek. Kötetszámot éppen ezért felesleges lett volna megadnunk. A lapszám közlését is csak akkor tartottuk szükségesnek, amikor valamely szócikk több lapra terjed. Az itt következő lapokon olvasható helyesbítések csak az I–V. kötetek anyagára vonatkoznak, mivel nyomdatechnikai okokból a szótár Sz–Zs betűs anyagában helyesbítésre szoruló adatokról az idő rövidsége miatt itt már nem tudunk tájékoztatást közölni.</div>
+<div class="behuzott">Köszönetet mondunk mindazoknak, akik az Értsz. első kötetének megjelenése óta javaslataikat, bírálatukat szóban vagy írásban közölték a szerkesztőséggel, s akik kritikai észrevételeiket nyomtatásban tették közzé.</div>
+<div class="behuzott">Minden észrevételt nem volt módunkban hasznosítani, s nem is értettünk egyet valamennyivel. Az Értsz. jellegére, tartalmára, módszereire vonatkozó elvi álláspontunkat már jóval a mű első kötetének megjelenése előtt kialakítottuk, a szaksajtóban több ízben ismertettük, s módot fogunk keresni arra, hogy ezekről külön kiadványban is számot adjunk.</div>
+<div class="behuzott">A szótárnak ezek a szerkesztési elvei, valamint az adott anyagi lehetőségek sem engedték meg, hogy címszavaink számát növeljük, a jelenleginél több szaknyelvi szót és szójelentést vegyünk fel, s hogy a javaslatoknak megfelelő egyéb változtatásokat tegyünk. Ezért ez a Függelék nem tartalmaz új, azaz utólag felvett címszavakat.</div>
+<div class="behuzott">A szerkesztőség szándékától eltérően kiadástechnikai okokból vált szükségessé a szótár Sz–Zs betűs anyagának két külön kötetben való közzététele.</div>
+<div class="behuzott">Végül köszönetet mondunk dr. SIKLÓS MARGITnak és WERNER GYÖRGYNÉnek, akik e szótár kéziratát a harmadik kötettől kezdve ideológiai szempontból lektorálták. A harmadik kötet anyagát ilyen vonatkozásban NYIRŐ JÓZSEF is lektorálta.</div>
+<div class="behuzott">Kegyelettel emlékezünk meg UJVÁRY LAJOSról, szerkesztőségünk tagjáról, valamint BÁLINT IMRE és LOVÁNYI GYULA belső munkatársainkról, akik már nem érhették meg közös munkánk befejezését.</div>
+<div class="behuzott" style="text-align:right"><BR/><em>Az Értsz. szerkesztősége</em></div>
+
+<BR/><BR/>
+<HR/>
+<BR/><BR/>
+<div class="text-center">
+<B>SZÓTÁRI ADATOK TÁBLÁZATAI</B>
+<BR/><BR/>
+Az első kötet főbb szótári adatai
+</div>
+<BR/>
+<table align="center" width="800" cellpadding="5" border="1" bordercolor="lightgray">
+<TR><TD></TD><TD align="center">A, Á</TD><TD align="center">B</TD><TD align="center">C</TD><TD align="center">Cs</TD><TD align="center">D</TD><TD align="center">Összesen</strong></TD>
+<TR><TD>Önálló szócikk</TD><TD align="right">3074</TD><TD align="right">3308</TD><TD align="right">506</TD><TD align="right">1288</TD><TD align="right">1286</TD><TD align="right">9462</TD>
+<TR><TD>Utaló szócikk</TD><TD align="right">20</TD><TD align="right">58</TD><TD align="right">10</TD><TD align="right">46</TD><TD align="right">19</TD><TD align="right">153</TD>
+<TR><TD>Szóláshasonlat</TD><TD align="right">19</TD><TD align="right">40</TD><TD align="right">12</TD><TD align="right">13</TD><TD align="right">23</TD><TD align="right">107</TD>
+<TR><TD>Szólás</TD><TD align="right">49</TD><TD align="right">68</TD><TD align="right">15</TD><TD align="right">29</TD><TD align="right">34</TD><TD align="right">195</TD>
+<TR><TD>Közmondás</TD><TD align="right">18</TD><TD align="right">27</TD><TD align="right">2</TD><TD align="right">6</TD><TD align="right">7</TD><TD align="right">60</TD>
+<TR><TD>Értelmezés nélkül felsorolt igekötős ige</TD><TD align="right">134</TD><TD align="right">459</TD><TD align="right">88</TD><TD align="right">504</TD><TD align="right">268</TD><TD align="right">1453</TD>
+<TR><TD>Az előtag szócikkében értelmezés nélkül felsorolt összetétel</TD><TD align="right">1074</TD><TD align="right">1890</TD><TD align="right">276</TD><TD align="right">734</TD><TD align="right">836</TD><TD align="right">4810</TD>
+<TR><TD>A szócikkek végén értelmezés nélkül felsorolt származék</TD><TD align="right">3935</TD><TD align="right">4698</TD><TD align="right">515</TD><TD align="right">1250</TD><TD align="right">1319</TD><TD align="right">11717</TD>
+<TR><TD><strong>Összesen:</TD><TD align="right"></TD><TD align="right"></TD><TD align="right"></TD><TD align="right"></TD><TD align="right"></TD><TD align="right">27957</table>
+</div>
+
+<div class="text-center"><BR/><BR/>
+A második kötet főbb szótári adatai:
+</div>
+
+<BR/>
+<table align="center" width="800" cellpadding="5" border="1" bordercolor="lightgray">
+
+<TR><TD><strong></TD><TD align="center">E, É</TD><TD align="center">F</TD><TD align="center">G</TD><TD align="center">Gy</TD><TD align="center">Összesen</strong></TD>
+<TR><TD>Önálló szócikk</TD><TD align="right">3697</TD><TD align="right">3959</TD><TD align="right">931</TD><TD align="right">659</TD><TD align="right">9246</TD>
+<TR><TD>Utaló szócikk</TD><TD align="right">34</TD><TD align="right">63</TD><TD align="right">26</TD><TD align="right">9</TD><TD align="right">132</TD>
+<TR><TD>Szóláshasonlat</TD><TD align="right">13</TD><TD align="right">22</TD><TD align="right">8</TD><TD align="right">5</TD><TD align="right">48</TD>
+<TR><TD>Szólás</TD><TD align="right">39</TD><TD align="right">102</TD><TD align="right">26</TD><TD align="right">8</TD><TD align="right">175</TD>
+<TR><TD>Közmondás</TD><TD align="right">12</TD><TD align="right">18</TD><TD align="right">3</TD><TD align="right">3</TD><TD align="right">36</TD>
+<TR><TD>Értelmezés nélkül felsorolt igekötős ige</TD><TD align="right">562</TD><TD align="right">1220</TD><TD align="right">352</TD><TD align="right">198</TD><TD align="right">2332</TD>
+<TR><TD>Az előtag szócikkében értelmezés nélkül felsorolt összetétel</TD><TD align="right">1573</TD><TD align="right">2365</TD><TD align="right">980</TD><TD align="right">688</TD><TD align="right">5606</TD>
+<TR><TD>A szócikk végén értelmezés nélkül felsorolt származék</TD><TD align="right">5825</TD><TD align="right">5420</TD><TD align="right">804</TD><TD align="right">622</TD><TD align="right">12671</TD>
+<TR><TD><strong>Összesen:</TD><TD align="right"></TD><TD align="right"></TD><TD align="right"></TD><TD align="right"></TD><TD align="right">30246</TD></table>
+
+</div></div></div></div></div></div>
+<div class="text-center"><BR/><BR/>
+A harmadik kötet főbb szótári adatai:
+</div>
+
+<BR/>
+<table align="center" width="800" cellpadding="5" border="1" bordercolor="lightgray">
+
+<TR><TD><strong></TD><TD align="center">H</TD><TD align="center">I, Í</TD><TD align="center">J</TD><TD align="center">K–Kh</TD><TD align="center">Összesen</strong></TD>
+<TR><TD>Önálló szócikk</TD><TD align="right">3192</TD><TD align="right">1280</TD><TD align="right">690</TD><TD align="right">2079</TD><TD align="right">7241</TD>
+<TR><TD>Utaló szócikk</TD><TD align="right">55</TD><TD align="right">20</TD><TD align="right">7</TD><TD align="right">35</TD><TD align="right">117</TD>
+<TR><TD>Szóláshasonlat</TD><TD align="right">41</TD><TD align="right">16</TD><TD align="right">4</TD><TD align="right">36</TD><TD align="right">97</TD>
+<TR><TD>Szólás</TD><TD align="right">55</TD><TD align="right">17</TD><TD align="right">7</TD><TD align="right">68</TD><TD align="right">147</TD>
+<TR><TD>Közmondás</TD><TD align="right">14</TD><TD align="right">10</TD><TD align="right">5</TD><TD align="right">16</TD><TD align="right">45</TD>
+<TR><TD>Értelmezés nélkül felsorolt igekötős ige</TD><TD align="right">647</TD><TD align="right">280</TD><TD align="right">131</TD><TD align="right">529</TD><TD align="right">1587</TD>
+<TR><TD>Az előtag szócikkében értelmezés nélkül felsorolt összetétel</TD><TD align="right">2080</TD><TD align="right">696</TD><TD align="right">429</TD><TD align="right">1644</TD><TD align="right">4849</TD>
+<TR><TD>A szócikk végén értelmezés nélkül felsorolt származék</TD><TD align="right">2695</TD><TD align="right">1053</TD><TD align="right">482</TD><TD align="right">1784</TD><TD align="right">6014</TD>
+<TR><TD><strong>Összesen:</TD><TD align="right"></TD><TD align="right"></TD><TD align="right"></TD><TD align="right"></TD><TD align="right">20097</TD></table>
+
+</div></div></div></div></div></div>
+<div class="text-center"><BR/><BR/>
+A negyedik kötet főbb szótári adatai:
+</div>
+
+<BR/>
+<table align="center" width="800" cellpadding="5" border="1" bordercolor="lightgray">
+
+<TR><TD><strong></TD><TD align="center">Ki–Kv</TD><TD align="center">L</TD><TD align="center">Ly</TD><TD align="center">M–Mi</TD><TD align="center">Összesen</strong></TD>
+<TR><TD>Önálló szócikk</TD><TD align="right">4335</TD><TD align="right">2587</TD><TD align="right">11</TD><TD align="right">3362</TD><TD align="right">10295</TD>
+<TR><TD>Utaló szócikk</TD><TD align="right">54</TD><TD align="right">26</TD><TD align="right">1</TD><TD align="right">45</TD><TD align="right">126</TD>
+<TR><TD>Szóláshasonlat</TD><TD align="right">49</TD><TD align="right">20</TD><TD align="right">–</TD><TD align="right">32</TD><TD align="right">101</TD>
+<TR><TD>Szólás</TD><TD align="right">66 </TD><TD align="right">39</TD><TD align="right">3</TD><TD align="right">33</TD><TD align="right">141</TD>
+<TR><TD>Közmondás</TD><TD align="right">26</TD><TD align="right">11</TD><TD align="right">1</TD><TD align="right">14</TD><TD align="right">36</TD>
+<TR><TD>Értelmezés nélkül felsorolt igekötős ige</TD><TD align="right">603</TD><TD align="right">507</TD><TD align="right">3</TD><TD align="right">220</TD><TD align="right">1333</TD>
+<TR><TD>Az előtag szócikkében értelmezés nélkül felsorolt összetétel</TD><TD align="right">1620</TD><TD align="right">1259</TD><TD align="right">13</TD><TD align="right">1378</TD><TD align="right">4270</TD>
+<TR><TD>A szócikk végén értelmezés nélkül felsorolt származék</TD><TD align="right">6887</TD><TD align="right">4475</TD><TD align="right">16</TD><TD align="right">6693</TD><TD align="right">18071</TD>
+<TR><TD><strong>Összesen:</TD><TD align="right"></TD><TD align="right"></TD><TD align="right"></TD><TD align="right"></TD><TD align="right">34389</TD></table>
+
+</div></div></div></div></div></div>
+
+<div class="text-center"><BR/><BR/>
+A harmadik és negyedik kötet k betűvel kezdődő címszavainak főbb szótári adatai:
+</div>
+
+<BR/>
+<table align="center" width="800" cellpadding="5" border="1" bordercolor="lightgray">
+
+<TR><TD><strong></TD><TD align="center">K–Kh</TD><TD align="center">Ki–Kv</TD><TD align="center">Összesen</strong></TD>
+<TR><TD>Önálló szócikk</TD><TD align="right">2079</TD><TD align="right">4335</TD><TD align="right">6414</TD>
+<TR><TD>Utaló szócikk</TD><TD align="right">35</TD><TD align="right">54</TD><TD align="right">89</TD>
+<TR><TD>Szóláshasonlat</TD><TD align="right">36</TD><TD align="right">49</TD><TD align="right">85</TD>
+<TR><TD>Szólás</TD><TD align="right">68 </TD><TD align="right">66</TD><TD align="right">134</TD>
+<TR><TD>Közmondás</TD><TD align="right">16</TD><TD align="right">26</TD><TD align="right">42</TD>
+<TR><TD>Értelmezés nélkül felsorolt igekötős ige</TD><TD align="right">529</TD><TD align="right">603</TD><TD align="right">1132</TD>
+<TR><TD>Az előtag szócikkében értelmezés nélkül felsorolt összetétel</TD><TD align="right">1644</TD><TD align="right">1620</TD><TD align="right">3264</TD>
+<TR><TD>A szócikk végén értelmezés nélkül felsorolt származék</TD><TD align="right">1784</TD><TD align="right">6887</TD><TD align="right">8671</TD>
+<TR><TD><strong>Összesen:</TD><TD align="right"></TD><TD align="right"></TD><TD align="right">19831</TD></table>
+
+</div></div></div></div>
+<div class="text-center"><BR/><BR/>
+Az ötödik kötet főbb szótári adatai:
+</div>
+
+<BR/>
+<table align="center" width="800" cellpadding="5" border="1" bordercolor="lightgray">
+
+<TR><TD><strong></TD><TD align="center">Mo–Mű</TD><TD align="center">N</TD><TD align="center">Ny</TD><TD align="center">O, Ó</TD><TD align="center">Ö, Ő</TD><TD align="center">P</TD><TD align="center">Q</TD><TD align="center">R</TD><TD align="center">S</TD><TD align="center">Összesen</strong></TD>
+<TR><TD>Önálló szócikk</TD><TD align="right">710</TD><TD align="right">1032</TD><TD align="right">564</TD><TD align="right">1009</TD><TD align="right">1074</TD><TD align="right">2479</TD><TD align="right">1</TD><TD align="right">1809</TD><TD align="right">1664</TD><TD align="right">10342</TD>
+<TR><TD>Utaló szócikk</TD><TD align="right">6</TD><TD align="right">9</TD><TD align="right">11</TD><TD align="right">21</TD><TD align="right">10</TD><TD align="right">58</TD><TD align="right">–</TD><TD align="right">29</TD><TD align="right">83</TD><TD align="right">227</TD>
+<TR><TD>Szóláshasonlat</TD><TD align="right">4</TD><TD align="right">4</TD><TD align="right">9</TD><TD align="right">16</TD><TD align="right">7</TD><TD align="right">32</TD><TD align="right">–</TD><TD align="right">14</TD><TD align="right">15</TD><TD align="right">101</TD>
+<TR><TD>Szólás</TD><TD align="right">4</TD><TD align="right">13</TD><TD align="right">8</TD><TD align="right">22</TD><TD align="right">10</TD><TD align="right">31</TD><TD align="right">–</TD><TD align="right">45</TD><TD align="right">24</TD><TD align="right">157</TD>
+<TR><TD>Közmondás</TD><TD align="right">5</TD><TD align="right">9</TD><TD align="right">3</TD><TD align="right">1</TD><TD align="right">8</TD><TD align="right">9</TD><TD align="right">–</TD><TD align="right">5</TD><TD align="right">8</TD><TD align="right">48</TD>
+<TR><TD>Értelmezés nélkül felsorolt igekötős ige</TD><TD align="right">125</TD><TD align="right">129</TD><TD align="right">294</TD><TD align="right">126</TD><TD align="right">102</TD><TD align="right">573</TD><TD align="right">–</TD><TD align="right">559</TD><TD align="right">498</TD><TD align="right">2406</TD>
+<TR><TD>Az előtag szócikkében értelmezés nélkül felsorolt összetétel</TD><TD align="right">825</TD><TD align="right">825</TD><TD align="right">518</TD><TD align="right">774</TD><TD align="right">487</TD><TD align="right">2453</TD><TD align="right">–</TD><TD align="right">1543</TD><TD align="right">1573</TD><TD align="right">8998</TD>
+<TR><TD>A szócikk végén értelmezés nélkül felsorolt származék</TD><TD align="right">785</TD><TD align="right">1013</TD><TD align="right">629</TD><TD align="right">1147</TD><TD align="right">2043</TD><TD align="right">2629</TD><TD align="right">–</TD><TD align="right">2600</TD><TD align="right">1805</TD><TD align="right">12651</TD>
+<TR><TD><strong>Összesen:</TD><TD align="right"></TD><TD align="right"></TD><TD align="right"></TD><TD align="right"></TD><TD align="right"></TD><TD align="right"></TD><TD align="right"></TD><TD align="right"></TD><TD align="right"></TD><TD align="right">34930</TD></table>
+
+</div></div></div></div></div></div></div></div></div></div></div>
+
+<div class="text-center"><BR/><BR/>
+A negyedik és ötödik kötet m betűvel kezdődő címszavainak főbb szótári adatai:
+</div>
+
+<BR/>
+<table align="center" width="800" cellpadding="5" border="1" bordercolor="lightgray">
+
+<TR><TD><strong></TD><TD align="center">M–Mi</TD><TD align="center">Mo–Mű</TD><TD align="center">Összesen</strong></TD>
+<TR><TD>Önálló szócikk</TD><TD align="right">3362</TD><TD align="right">710</TD><TD align="right">4072</TD>
+<TR><TD>Utaló szócikk</TD><TD align="right">45</TD><TD align="right">6</TD><TD align="right">51</TD>
+<TR><TD>Szóláshasonlat</TD><TD align="right">32</TD><TD align="right">4</TD><TD align="right">36</TD>
+<TR><TD>Szólás</TD><TD align="right">33 </TD><TD align="right">4</TD><TD align="right">37</TD>
+<TR><TD>Közmondás</TD><TD align="right">14</TD><TD align="right">5</TD><TD align="right">19</TD>
+<TR><TD>Értelmezés nélkül felsorolt igekötős ige</TD><TD align="right">220</TD><TD align="right">125</TD><TD align="right">345</TD>
+<TR><TD>Az előtag szócikkében értelmezés nélkül felsorolt összetétel</TD><TD align="right">1378</TD><TD align="right">825</TD><TD align="right">2203</TD>
+<TR><TD>A szócikk végén értelmezés nélkül felsorolt származék</TD><TD align="right">6693</TD><TD align="right">785</TD><TD align="right">7478</TD>
+<TR><TD><strong>Összesen:</TD><TD align="right"></TD><TD align="right"></TD><TD align="right">14241</TD></table>
+
+</div></div></div></div>
+<div class="text-center"><BR/><BR/>
+A hatodik kötet főbb szótári adatai:
+</div>
+
+<BR/>
+<table align="center" width="800" cellpadding="5" border="1" bordercolor="lightgray">
+
+<TR><TD align="center"><strong></TD><TD align="center">Sz</TD><TD align="center">T</TD><TD align="center">Ty</TD><TD align="center">Összesen</strong></TD>
+<TR><TD>Önálló szócikk</TD><TD align="right">3140</TD><TD align="right">3527</TD><TD align="right">28</TD><TD align="right">6695</TD>
+<TR><TD>Utaló szócikk</TD><TD align="right">41</TD><TD align="right">67</TD><TD align="right">4</TD><TD align="right">112</TD>
+<TR><TD>Szóláshasonlat</TD><TD align="right">30</TD><TD align="right">26</TD><TD align="right">3</TD><TD align="right">59</TD>
+<TR><TD>Szólás</TD><TD align="right">72</TD><TD align="right">46</TD><TD align="right">1</TD><TD align="right">119</TD>
+<TR><TD>Közmondás</TD><TD align="right">34</TD><TD align="right">10</TD><TD align="right">2</TD><TD align="right">46</TD>
+<TR><TD>Értelmezés nélkül felsorolt igekötős ige</TD><TD align="right">765</TD><TD align="right">1036</TD><TD align="right">–</TD><TD align="right">1801</TD>
+<TR><TD>Az előtag szócikkében értelmezés nélkül felsorolt összetétel</TD><TD align="right">2604</TD><TD align="right">3150</TD><TD align="right">22</TD><TD align="right">5776</TD>
+<TR><TD>A szócikk végén értelmezés nélkül felsorolt származék</TD><TD align="right">3742</TD><TD align="right">4060</TD><TD align="right">26</TD><TD align="right">7828</TD>
+<TR><TD><strong>Összesen:</TD><TD align="right"></TD><TD align="right"></TD><TD align="right"></TD><TD align="right">22436</TD></table>
+
+</div></div></div></div></div></div>
+<div class="text-center"><BR/><BR/>
+A hetedik kötet főbb szótári adatai:
+</div>
+
+<BR/>
+<table align="center" width="800" cellpadding="5" border="1" bordercolor="lightgray">
+
+<TR><TD><strong></TD><TD align="center">U</TD><TD align="center">Ü</TD><TD align="center">V</TD><TD align="center">W</TD><TD align="center">X</TD><TD align="center">Y</TD><TD align="center">Z</TD><TD align="center">Zs</TD><TD align="center">Összesen</strong></TD>
+<TR><TD>Önálló szócikk</TD><TD align="right">548</TD><TD align="right">332</TD><TD align="right">3033</TD><TD align="right">3</TD><TD align="right">2</TD><TD align="right">2</TD><TD align="right">540</TD><TD align="right">282</TD><TD align="right">4742</TD>
+<TR><TD>Utaló szócikk</TD><TD align="right">11</TD><TD align="right">14</TD><TD align="right">46</TD><TD align="right">–</TD><TD align="right">1</TD><TD align="right">4</TD><TD align="right">10</TD><TD align="right">13</TD><TD align="right">99</TD>
+<TR><TD>Szóláshasonlat</TD><TD align="right">2</TD><TD align="right">4</TD><TD align="right">22</TD><TD align="right">–</TD><TD align="right">–</TD><TD align="right">–</TD><TD align="right">6</TD><TD align="right">3</TD><TD align="right">37</TD>
+<TR><TD>Szólás</TD><TD align="right">11</TD><TD align="right">5</TD><TD align="right">44</TD><TD align="right">–</TD><TD align="right">–</TD><TD align="right">–</TD><TD align="right">5</TD><TD align="right">6</TD><TD align="right">71</TD>
+<TR><TD>Közmondás</TD><TD align="right">11</TD><TD align="right">1</TD><TD align="right">16</TD><TD align="right">–</TD><TD align="right">–</TD><TD align="right">–</TD><TD align="right">–</TD><TD align="right">4</TD><TD align="right">32</TD>
+<TR><TD>Értelmezés nélkül felsorolt igekötős ige</TD><TD align="right">132</TD><TD align="right">113</TD><TD align="right">760</TD><TD align="right">–</TD><TD align="right">–</TD><TD align="right">–</TD><TD align="right">201</TD><TD align="right">47</TD><TD align="right">1253</TD>
+<TR><TD>Az előtagok szócikkében értelmezés nélkül felsorolt összetétel</TD><TD align="right">314</TD><TD align="right">306</TD><TD align="right">2152</TD><TD align="right">19</TD><TD align="right">3</TD><TD align="right">–</TD><TD align="right">330</TD><TD align="right">193</TD><TD align="right">3316</TD>
+<TR><TD>A szócikk végén értelmezés nélkül felsorolt származék</TD><TD align="right">609</TD><TD align="right">393</TD><TD align="right">4080</TD><TD align="right">2</TD><TD align="right">5</TD><TD align="right">5</TD><TD align="right">550</TD><TD align="right">338</TD><TD align="right">5982</TD>
+<TR><TD><strong>Összesen:</TD><TD align="right"></TD><TD align="right"></TD><TD align="right"></TD><TD align="right"></TD><TD align="right"></TD><TD align="right"><TD align="right"></TD><TD align="right"></TD><TD align="right">15527</TD></table>
+
+</div></div></div></div></div></div></div></div></div></div>
+<div class="text-center"><BR/><BR/>
+A Magyar Nyelv Értelmező Szótára hét kötetének főbb szótári adatai:
+</div>
+
+<BR/>
+<table align="center" width="800" cellpadding="5" border="1" bordercolor="lightgray">
+
+<TR><TD><strong></TD><TD align="center">I.</TD><TD align="center">II.</TD><TD align="center">III.</TD><TD align="center">IV.</TD><TD align="center">V.</TD><TD align="center">VI.</TD><TD align="center">VII.</TD><TD align="center">Összesen</strong></TD>
+<TR><TD>Önálló szócikk</TD><TD align="right">9462</TD><TD align="right">9246</TD><TD align="right">7241</TD><TD align="right">10295</TD><TD align="right">10342</TD><TD align="right">6695</TD><TD align="right">4742</TD><TD align="right">58023</TD>
+<TR><TD>Utaló szócikk</TD><TD align="right">153</TD><TD align="right">132</TD><TD align="right">117</TD><TD align="right">126</TD><TD align="right">233</TD><TD align="right">112</TD><TD align="right">99</TD><TD align="right">972</TD>
+<TR><TD>Szóláshasonlat</TD><TD align="right">107</TD><TD align="right">48</TD><TD align="right">97</TD><TD align="right">101</TD><TD align="right">101</TD><TD align="right">57</TD><TD align="right">37</TD><TD align="right">550</TD>
+<TR><TD>Szólás</TD><TD align="right">195</TD><TD align="right">175</TD><TD align="right">147</TD><TD align="right">141</TD><TD align="right">157</TD><TD align="right">119</TD><TD align="right">71</TD><TD align="right">1005</TD>
+<TR><TD>Közmondás</TD><TD align="right">60</TD><TD align="right">36</TD><TD align="right">45</TD><TD align="right">52</TD><TD align="right">48</TD><TD align="right">46</TD><TD align="right">32</TD><TD align="right">319</TD>
+<TR><TD>Értelmezés nélkül felsorolt igekötős ige</TD><TD align="right">1453</TD><TD align="right">2332</TD><TD align="right">1587</TD><TD align="right">1333</TD><TD align="right">2406</TD><TD align="right">1801</TD><TD align="right">1253</TD><TD align="right">12165</TD>
+<TR><TD>Az előtag szócikkében értelmezés nélkül felsorolt összetétel</TD><TD align="right">4810</TD><TD align="right">5606</TD><TD align="right">4849</TD><TD align="right">4270</TD><TD align="right">8998</TD><TD align="right">5776</TD><TD align="right">3316</TD><TD align="right">37625</TD>
+<TR><TD>A szócikkek végén értelmezés nélkül felsorolt származék</TD><TD align="right">11717</TD><TD align="right">12671</TD><TD align="right">6014</TD><TD align="right">18071</TD><TD align="right">12651</TD><TD align="right">7828</TD><TD align="right">5982</TD><TD align="right">74934</TD>
+<TR><TD>Értelmezett szókapcsolatok</TD><TD align="right">3129</TD><TD align="right">3126</TD><TD align="right">2992</TD><TD align="right">3759</TD><TD align="right">3411</TD><TD align="right">2812</TD><TD align="right">2051</TD><TD align="right">21280</TD>
+<TR><TD><strong>Összesen:</TD><TD align="right"></TD><TD align="right"></TD><TD align="right"></TD><TD align="right"></TD><TD align="right"><TD align="right"></TD><TD align="right"></TD><TD align="right">206873</TD></table>
+</div>
+</div>
+</div></div></div></div></div></div></div></div></div>
+<BR/>
+<div class="behuzott">
+Van ezenkívül a hét kötetben több mint 115 000 idézet. Az idézetek csekély kivétellel szépirodalmi művekből valók.
+<BR/><BR/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript"> var gemius_identifier = "nA5K38S_R6j5UvHZZUaBxcUFjzOBaptU.eLGPQLqtjX.r7"; function gemius_pending(i) { window[i] = window[i] || function() {var x = window[i+"_pdata"] = window[i+"_pdata"] || []; x[x.length]=arguments;};};gemius_pending("gemius_hit"); gemius_pending("gemius_event"); gemius_pending("pp_gemius_hit"); gemius_pending("pp_gemius_event");(function(d,t) {try {var gt=d.createElement(t),s=d.getElementsByTagName(t)[0],l="http"+((location.protocol=="https:")?"s":""); gt.setAttribute("async","async");gt.setAttribute("defer","defer"); gt.src=l+"://gthu.hit.gemius.pl/gemius.js"; s.parentNode.insertBefore(gt,s);} catch (e) {}})(document,"script"); </script> </body>
+</html>

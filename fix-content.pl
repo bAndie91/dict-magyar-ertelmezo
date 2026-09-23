@@ -32,16 +32,16 @@ elsif($word eq 'hehezet')
 elsif($word eq 'jaj')
 {
 	# több mint egy oldal teljesen hiányzott
-	s{(Tréfás, évődő ellenkezés bevezetésére\.[^<]+?).*}{$1]
-□ «Királyasszony, néném, Az egekre kérném: Azt a rózsát, piros rózsát
-Haj, beh szeretném én! … | Jaj! öcsém, Kázmér, Azt nem adom százér.» — Ar.
+	s{(Tréfás, évődő ellenkezés bevezetésére\.).*}{$1 . q{]
+□ <span style="color:blue">Királyasszony, néném, Az egekre kérném: Azt a rózsát, piros rózsát
+Haj, beh szeretném én! … | Jaj! öcsém, Kázmér, Azt nem adom százér.</span> — Ar.
 || d. [jaj v. jāj] ‹Vitának, töprengésnek, a beszélő önmagával való vitatkozásának festésében,
-ellenvetés, visszavonás kifejezésében.› □ «Néha egy-egy tanács indul egész hévvel,
-De maga a szóló megakasztja dé-vel. | „Hátha bizony . . . . jaj de! — Tudod-é mit? … áh de!”» Ar.
+ellenvetés, visszavonás kifejezésében.› □ <span style="color:blue">Néha egy-egy tanács indul egész hévvel,
+De maga a szóló megakasztja dé-vel. | „Hátha bizony . . . . jaj de! — Tudod-é mit? … áh de!”</span> Ar.
 || e. [jāj v. jaj] ‹Elbeszélésben, a sikertelenség hangulatának festésére, a szereplő lehangoltságának érzékeltetésére.›
-□ «Mint a hímszarvas, kit vadász sérte nyíllal, … Fut hideg forrásnak enyhítő vizére,
+□ <span style="color:blue">Mint a hímszarvas, kit vadász sérte nyíllal, … Fut hideg forrásnak enyhítő vizére,
 És ezerjófüvet tépni a sebére; Jaj, de a forrásnak kiszáradt az ágya.
-Az ezerjófüvet írül sem találja, … | Ugy bolyonga Miklós.» Ar.</li>
+Az ezerjófüvet írül sem találja, … | Ugy bolyonga Miklós.</span> Ar.</li>
 <li>23. [jāj] ‹Mentegetőzésben.› □ „Becsületes neved, édes atyámfia?” …
 „Jaj, biz én nem igen dicsekszem nevemmel, Szegény fiú vagyok, noha nemes-ember.” Ar.
 Jaj, nagyságos asszony, nincs otthon kire hagyni [a gyereket], hát ki kell hozni magammal a munkára. Mó.</li>
@@ -86,44 +86,42 @@ Csillapodjál édes fiacskám … Gábor, Gábor! MIK.</li>
 feltevésének közlésében:› nagyon rossz, keserves.
 ~ volt annak, aki szólni mert.
 ~ lett volna neked, ha ellenszegültél volna.
-□ Jaj volna az írónak, ki addig le nem írna egy perfektumot, míg sorba tanácsot nem kérd
-nyelvészeinktől!
+□ Jaj volna az írónak, ki addig le nem írna egy perfektumot, míg sorba tanácsot nem kérd nyelvészeinktől!
 Még jajabb, e tanácsok meghallgatása után! Ar.
 Jaj volt annak, aki valami újjal nem lépett elő, de jajabb annak, aki értéktelen darabbal állt a deszkára. Baksay S.
-|| a. ‹Fenyegetésben, keserves sorsot, pusztulást ígérő v. jósló kijelen tésben.› 
+|| a. ‹Fenyegetésben, keserves sorsot, pusztulást ígérő v. jósló kijelentésben.› 
 □ Csak szerelmied határát ne érjem, Mert ott, kis lyány, jaj néked, jaj nékem! Pet.</li>
-<li>4. (részeshatározó nélkül) (nép) Nagyon
-
-rossz, fájd alm as, nehéz, keserves (állap o t,
-hely zet, dolog, ügy). ~ a rosszal, de ~abb
-a rossz nélkül. О Ja j a nemzetnek, mely lakhelyeiből kiüldöztetett: jajabb annak, melly ősi
-nyelvétőlfosztatott meg. К ö L. 11 a. ( ritk) Olyan
-állap o t, h elyzet, am elyben sok fá jd a lm a t kell
-elviselnie v k in e k ; keserves álla p o t, sors.
-□ S ja j lett volna szegény Piroskának dolga,
-IHa, míg emlegették,folyvást csuklóit volna. Ah.
-II I. fn [ja j] -t, -ok, jaja v. (költ) jajja
-1. (irod) K eserves, fájd alm as, b án a to s
-fe lk iá ltá s; ja jk iá ltá s. □ Ritkult a sokaság;
-ja j, üvöltés támada benne. V ÖR. S a néma légbe
-nem vegyül Csak legkisebbke ja j. G a r . Mosolygom az ostobák Dühödi jaját és hiú mellverését. T ót h É s hallja távol haldoklók ja já t. . .
-J ü. Kívülről, a folyosó felől hosszan elnyújtott
-ja j zendült fel, bugyborékoló hörgés vegyült bele,
-majd minden dobpergésbe fú lt. К a r . || a. (főleg
-b irto k o s szerkezetben, b irto k szó k én t) ( átv
-is, irod) N agy töm eg, a nép ja jk iá ltá s a ,
-jajsz a v a , keserves sorsa m ia tt feltörő p a n asza. □ Itt egy fa lu , amott egy város ég,
-Százezerek jajától zúg a lég. P é t . Oh, nem
-hallod-e A nép jaját? Mad.
-2. (főleg irod) K eserves, fájd alm as, b á n atos p anaszkodás, panasz. Tele vannak ~jal,
-bajjal: sok p an aszu k , fájd alm u k v an . □ Hazánk külön-külön vidékein ja jt, s bánatot találtam. K á t . Tán szíve királynak megesik a jajra.
-A r . Ezer oh, ja j, baj, ejnye, nyűg Siránkozik
-pityergő szánkon. A dy
-3. (ritk, irod) F ájd alo m . (2) □ Lelkem
-minden húrja átrezeg a jajtul. Ar. A z ő jajok
-rész, összes az enyém. S z i g l .- S h a .
-Ö : 1. —dal; —keserves; ~ ordítás; ~ panasz; —üvöltés; 2. macska—.};
-
+<li>4. (részeshatározó nélkül) (nép) Nagyon rossz, fájdalmas, nehéz, keserves (állapot,
+helyzet, dolog, ügy).
+~ a rosszal, de ~abb a rossz nélkül.
+□ Jaj a nemzetnek, mely lakhelyeiből kiüldöztetett: jajabb annak, melly ősi
+nyelvétől fosztatott meg. КÖL.
+|| a. (ritk) Olyan állapot, helyzet, amelyben sok fájdalmat kell
+elviselnie vkinek; keserves állapot, sors.
+□ S jaj lett volna szegény Piroskának dolga,
+| Ha, míg emlegették, folyvást csuklott volna. Ar.</li>
+<li>III. fn [jaj] -t, -ok, jaja v. (költ) jajja</li>
+<li>1. (irod) Keserves, fájdalmas, bánatos
+felkiáltás; jajkiáltás. □ Ritkult a sokaság;
+jaj, üvöltés támada benne. VÖR.
+S a néma légbe nem vegyül Csak legkisebbke jaj. Gar.
+Mosolygom az ostobák Dühödt jaját és hiú mellverését. Tóth
+És hallja távol haldoklók jaját… Ju.
+Kívülről, a folyosó felől hosszan elnyújtott
+jaj zendült fel, bugyborékoló hörgés vegyült bele,
+majd minden dobpergésbe fúlt. Кar.
+|| a. (főleg birtokos szerkezetben, birtokszóként) (átv is, irod)
+Nagy tömeg, a nép jajkiáltása, jajszava, keserves sorsa miatt feltörő panasza.
+□ Itt egy falu, amott egy város ég, Százezerek jajától zúg a lég. Pet.
+Oh, nem hallod-e A nép jaját? Mad.</li>
+<li>2. (főleg irod) Keserves, fájdalmas, bánatos panaszkodás, panasz.
+Tele vannak ~jal, bajjal: sok panaszuk, fájdalmukvan.
+□ Hazánk külön-külön vidékein jajt, s bánatot találtam. Kat.
+Tán szíve királynak megesik a jajra. Ar.
+Ezer oh, jaj, baj, ejnye, nyűg Siránkozik pityergő szánkon. Ady</li>
+<li>3. (ritk, irod) Fájdalom. (2) □ Lelkem minden húrja átrezeg a jajtul. Ar.
+Az ő jajok rész, összes az enyém. Szigl.-Sha.</li>
+<li><b>Ö:</b> 1. ~dal; ~keserves; ~ordítás; ~panasz; ~üvöltés; 2. macska~.}}e;
 }
 
 print $_;

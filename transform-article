@@ -13,10 +13,11 @@ perl greentext.pl |\
 perl boldtext.pl |\
 perl superscriptize.pl |\
 perl subscriptize.pl |\
-~/src/w3m/w3m/w3m -graph -X -dump -dump_color -cols 100000 -T text/html -F -r -O UTF-8
+~/src/w3m/w3m/w3m -graph -X -dump -dump_ansi_styles -dump_passthrough_ansi_sgr_codes -cols 100000 -T text/html -F -r -O UTF-8
 
 # note, this script uses a modified version of w3m (branched from 0.5.3+git20230121-2 version)
-# which allows 32k long lines in redered html page.
-# this is needed to prevent line wrap even on lines longer than 1024.
-# fm.h: #define MAXIMUM_COLS 32000
-# and a patch to pass through ANSI color codes.
+# 1. allow 32k long lines in redered html page.
+#    this is needed to prevent line wrap even on lines longer than 1024.
+#    fm.h: #define MAXIMUM_COLS 32000
+# 2. to pass through ANSI color codes: -dump_passthrough_ansi_sgr_codes
+# 3. to render B/I/U tags with ANSI SGR code: -dump_ansi_styles

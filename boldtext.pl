@@ -10,9 +10,9 @@ $_ = <STDIN>;
 $re_span = q{(?'SPAN'<span.*?>(?:(?&INSPAN))*</span>)};
 $re_span_interior = q{(?'INSPAN'(?!<span.*?>|</span>).|(?&SPAN))};
 
-$ansi_bold = "\x1B[1m";
-$ansi_nobold = "\x1B[22m";
+$highlight   = "\x1B[100m【";
+$no_highlight = "】\x1B[49m";
 
-s{(?(DEFINE)$re_span)(?(DEFINE)$re_span_interior)<span class="popup">(?'SP1'\s*)(?'POPUP'(?:$re_span_interior)*?)(?'SP2'\s*)(</span>)(•)?}{$+{SP1}$ansi_bold【$+{POPUP}】$ansi_nobold$+{SP2}}gi;
+s{(?(DEFINE)$re_span)(?(DEFINE)$re_span_interior)<span class="popup">(?'SP1'\s*)(?'POPUP'(?:$re_span_interior)*?)(?'SP2'\s*)(</span>)(•)?}{$+{SP1}$highlight$+{POPUP}$no_highlight$+{SP2}}gis;
 
 print $_;
