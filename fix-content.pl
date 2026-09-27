@@ -42,45 +42,50 @@ De maga a szóló megakasztja dé-vel. | „Hátha bizony . . . . jaj de! — Tu
 □ <span style="color:blue">Mint a hímszarvas, kit vadász sérte nyíllal, … Fut hideg forrásnak enyhítő vizére,
 És ezerjófüvet tépni a sebére; Jaj, de a forrásnak kiszáradt az ágya.
 Az ezerjófüvet írül sem találja, … | Ugy bolyonga Miklós.</span> Ar.</li>
-<li>23. [jāj] ‹Mentegetőzésben.› □ „Becsületes neved, édes atyámfia?” …
-„Jaj, biz én nem igen dicsekszem nevemmel, Szegény fiú vagyok, noha nemes-ember.” Ar.
-Jaj, nagyságos asszony, nincs otthon kire hagyni [a gyereket], hát ki kell hozni magammal a munkára. Mó.</li>
+<li>23. [jāj] ‹Mentegetőzésben.› □ <span style="color:blue">„Becsületes neved, édes atyámfia?” …
+„Jaj, biz én nem igen dicsekszem nevemmel, Szegény fiú vagyok, noha nemes-ember.”</span> Ar.
+<span style="color:blue">Jaj, nagyságos asszony, nincs otthon kire hagyni</span> [a gyereket], <span style="color:blue">hát ki kell hozni magammal a munkára.</span> Mó.</li>
 <li>24. [jaj] ‹Annak kifejezésére, hogy valami hirtelen eszünkbe jutott, amiről megfeledkeztünk.›
-□ Valami jutott eszembe! | Zálogul majd azt teszem be. | Előre, | Hitvesem fejkötője! | Jaj de hisz már sírba zártam
-Szerelmetes hitestársam, S ott véle Nyúgoszik fejkötője. Pet.</li>
-<li>25. [jāj v. jaj] (Elbeszélésben, vmely elmúlt állapot, helyzet, megtörtént eset, esemény, élmény festésére.) ~, de szép látvány
-volt! ~, de undorító volt az egész! ~, hogy féltem!</li>
+□ <span style="color:blue">Valami jutott eszembe! | Zálogul majd azt teszem be. | Előre, | Hitvesem fejkötője! | Jaj de hisz már sírba zártam
+Szerelmetes hitestársam, S ott véle Nyúgoszik fejkötője.</span> Pet.</li>
+<li>25. [jāj v. jaj] ‹Elbeszélésben, vmely elmúlt állapot, helyzet, megtörtént eset, esemény, élmény festésére.›
+<span style="color:blue">Jaj, de szép látvány volt!</span>
+<span style="color:blue">Jaj, de undorító volt az egész!</span>
+<span style="color:blue">Jaj, hogy féltem!</span></li>
 <li>II. (állítmányként v. állítmány ragozhatatlan részeként, a mn-i v. fn-i állítmányhoz némileg hasonló szerepben) [jaj] (ritk. -abb)</li>
 <li>1. (2. v. 3. személyű részeshat-val) ‹Fenyegetést tartalmazó kifejezés állítmányaként, ill. állítmányának ragozhatatlan részeként:›
-nagyon rossz (dolog), nagyon keserves (sors). ~ (lesz) neked! (v. nektek!): lakolni fogsz (v. fogtok),
-bajba kerülsz (v. kerültök); ~ a legyőzőiteknek: keserves sors vár a legyőzöttekre; (nép) ~ lesz a bőrödnek!:
-vigyázz magadra, mert elverlek! — 1<sub>1</sub> (részeshat nélkül) (ritk) □ Jaj, ki parancsom élve szegi! Ar.
-Jaj a botránkozónak, de százszor jaj a botránkoztatónak. Jók. 
-Itél a nép, itélni fog [,] S ezerszer jaj a bűnösöknek. ADY — 1<sub>2</sub>
-(nép) ‹A részeshat testrésznév.› □ Jaj a fejének, ha én még egyszer megkapom. JÓK. — 1<sub>3</sub>
-(főleg irod) ‹Élettelen tárgyra vonatkoztatva.› □ Amely [kő] porhatag már, Vessétek azt el
-kérlelhetetlenül, Bármily szent emlék van csatolva hozzá, Mert jaj a háznak mely alapba gyönge. Pet.
-A haja sűrű volt és annálfogva gubancos: jaj volt annak a fésűnek, aki abba rendet csinálni beletévedt, mert beletörtek
-a fogai. JÓK.
+nagyon rossz (dolog), nagyon keserves (sors).
+<span style="color:blue">Jaj (lesz) neked! (v. nektek!):</span> lakolni fogsz (v. fogtok), bajba kerülsz (v. kerültök);
+<span style="color:blue">Jaj, a legyőzötteknek:</span> keserves sors vár a legyőzöttekre;
+<span style="color:blue">(nép) Jaj lesz a bőrödnek!:</span> vigyázz magadra, mert elverlek!
+— 1<sub>1</sub> (részeshat nélkül) <span style="color:blue">(ritk)</span>
+□ <span style="color:blue">Jaj, ki parancsom élve szegi!</span> Ar.
+<span style="color:blue">Jaj a botránkozónak, de százszor jaj a botránkoztatónak.</span> Jók.
+<span style="color:blue">Itél a nép, itélni fog [,] S ezerszer jaj a bűnösöknek.</span> ADY
+— 1<sub>2</sub> <span style="color:blue">(nép)</span> ‹A részeshat testrésznév.›
+□ <span style="color:blue">Jaj a fejének, ha én még egyszer megkapom.</span> JÓK.
+— 1<sub>3</sub> <span style="color:blue">(főleg irod)</span> ‹Élettelen tárgyra vonatkoztatva.› 
+□ <span style="color:blue">Amely</span> [kő] <span style="color:blue">porhatag már, Vessétek azt el
+kérlelhetetlenül, Bármily szent emlék van csatolva hozzá, Mert jaj a háznak mely alapba gyönge.</span> Pet.
+<span style="color:blue">A haja sűrű volt és annálfogva gubancos: jaj volt annak a fésűnek, aki abba rendet csinálni beletévedt, mert beletörtek a fogai.</span> Jók.
 || a. ‹Elbeszélésben, fenyegető magatartás jellemzésére, rossz vég sejtetésére.› 
-□ [Dobó] ismét felragadja a kardját, s ráveti magát tigrisként a résen benyomakodó törökre.
-Jaj annak, aki most eléje kerül. Gárd.
-Árpád hazájában jaj annak, Aki nem úr és nem bitang. Ady.</li>
-<li>2. (1. sz-ű részeshatározóval) ~ nekem!
-v. (ritk) ~ nekünk!: a) ‹szenvedés, fájdalmas panasz kifejezésére›;
-□ Piroska . . . . ez a név! jaj nekem, ez a név! | Hogy tipra keresztül
-egy boldogtalan év S közel a másiknak fele is
-már rajtam; Mióta e dalra kulcsolva van ajkam! Ar.
-Karolsz még, drága, kicsi társam? | Jaj, nekem, jaj, ezerszer is jaj
-Ebben a véres ájulásban. Ady;
-b) ‹ijedség, rémület, kétségbeesés kifejezésére›; ~ nekem v . ~ nekünk,
-ha…: keserves sors vár rám v. ránk, ha…;
-nagyon rossz lesz nekem v. nekünk, ha…
-□ Ha jól megnézlek, még sem vagy te az [= Korpádi]!
-Te — jaj nekem, jaj, Kont! oda vagyok. VÖR.
-A többi istent kicsit bánom én: Csakhogy magamnak is jaj. Ar.-Arisz.
-Mit cselekszel az istenért? Jaj nekünk, jaj!
-Csillapodjál édes fiacskám … Gábor, Gábor! MIK.</li>
+□ [Dobó] <span style="color:blue">ismét felragadja a kardját, s ráveti magát tigrisként a résen benyomakodó törökre.
+Jaj annak, aki most eléje kerül.</span> Gárd.
+<span style="color:blue">Árpád hazájában jaj annak, Aki nem úr és nem bitang.</span> Ady.</li>
+<li>2. (1. sz-ű részeshatározóval) <span style="color:blue">Jaj nekem!</span>
+v. <span style="color:blue">(ritk)</span> <span style="color:blue">Jaj nekünk!:</span>
+a) ‹szenvedés, fájdalmas panasz kifejezésére›;
+□ <span style="color:blue">Piroska . . . . ez a név! jaj nekem, ez a név! | Hogy tipra keresztül
+egy boldogtalan év S közel a másiknak fele is már rajtam; Mióta e dalra kulcsolva van ajkam!</span> Ar.
+<span style="color:blue">Karolsz még, drága, kicsi társam? | Jaj, nekem, jaj, ezerszer is jaj
+Ebben a véres ájulásban.</span> Ady;
+b) ‹ijedség, rémület, kétségbeesés kifejezésére›; <span style="color:blue">Jaj nekem</span> v. <span style="color:blue">Jaj nekünk, ha…:</span>
+keserves sors vár rám v. ránk, ha…; nagyon rossz lesz nekem v. nekünk, ha…
+□ <span style="color:blue">Ha jól megnézlek, még sem vagy te az [= Korpádi]!
+Te — jaj nekem, jaj, Kont! oda vagyok.</span> Vör.
+<span style="color:blue">A többi istent kicsit bánom én: Csakhogy magamnak is jaj.</span> Ar.-Arisz.
+<span style="color:blue">Mit cselekszel az istenért? Jaj nekünk, jaj!
+Csillapodjál édes fiacskám … Gábor, Gábor!</span> Mik.</li>
 <li>3. (1., 2. v. 3. sz-ű részeshatározóval)
 ‹Múltra vonatkoztatva, szenvedéssel, fájdalommal kapcsolatos ténynek v. ilyen tény
 feltevésének közlésében:› nagyon rossz, keserves.
