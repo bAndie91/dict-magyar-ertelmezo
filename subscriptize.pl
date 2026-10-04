@@ -3,6 +3,8 @@
 use utf8;
 use open ':std', ':utf8';
 
+$ANSI_CODE_REGEX = qr/\x1B\[[\d;]*m/;
+
 %tr = (qw/0 ₀ 1 ₁ 2 ₂ 3 ₃ 4 ₄ 5 ₅ 6 ₆ 7 ₇ 8 ₈ 9 ₉ n ₙ/, ' ', ' ');
 
 sub subscript_char {
@@ -13,8 +15,9 @@ sub subscript_char {
 $/ = undef;
 $_ = <STDIN>;
 
-s{(»|)<sub>(.+?)</sub>}{ join('', map { subscript_char($_, $&); } split //, $2).$1 }eg;
-s{(?:(»)(\s*)|)\[(\d+)\]}{ $2.join('', map { subscript_char($_, $&); } split //, $3).$1 }eg;
+s{(»(?:$ANSI_CODE_REGEX|)|)<sub>(.+?)</sub>}{ join('', map { subscript_char($_, $&); } split //, $2).$1 }eg;
+s{(?:(»(?:$ANSI_CODE_REGEX|))(\s*)|)\[(\d+)\]}{ $2.join('', map { subscript_char($_, $&); } split //, $3).$1 }eg;
+s{»($ANSI_CODE_REGEX|)(\s*)($ANSI_CODE_REGEX|)«}{$2}g;
 
 print $_;
 
