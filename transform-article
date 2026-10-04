@@ -13,6 +13,7 @@ perl greentext.pl |\
 perl boldtext.pl |\
 perl superscriptize.pl |\
 perl subscriptize.pl |\
+perl crossreferences.pl |\
 ~/src/w3m/w3m/w3m -graph -X -dump -dump_ansi_styles -dump_passthrough_ansi_sgr_codes -cols 100000 -T text/html -F -r -O UTF-8
 
 # note, this script uses a modified version of w3m (branched from 0.5.3+git20230121-2 version)
